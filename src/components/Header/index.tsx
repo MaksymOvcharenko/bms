@@ -10,12 +10,12 @@ export default function Header() {
  
   return (
     <header className={styles.header}>
-      <Image 
+      {/* <Image 
         src={logo} 
         alt="Ivancom" 
         width={196} // Встановіть необхідні розміри
         height={80} // Встановіть необхідні розміри
-      />
+      /> */}
       <nav className={styles.nav}>
         <LocalSwitcher />
         <NavBar />

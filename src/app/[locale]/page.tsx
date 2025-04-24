@@ -1,12 +1,12 @@
-import { useTranslations } from 'next-intl';
+import ServicesBlock from "@/components/ServicesBlock/ServicesBlock";
 
-export default function Home() {
-  const t = useTranslations('IndexPage');
 
+export default function HomePage({ params }: { params: { locale: string } }) {
   return (
-    <div>
-      <h1 className='text-4xl mb-4 font-semibold'>{t('title')}</h1>
-      <p>{t('description')}</p>
-    </div>
+    <>
+      <h1 className="text-4xl font-bold">Головна сторінка</h1>
+      {/* ...інші блоки... */}
+      <ServicesBlock locale={params.locale} />
+    </>
   );
 }

@@ -96,8 +96,9 @@
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
-import Header from "@/components/Header";
-import Footer from "@/components/footer";
+import { unstable_setRequestLocale } from 'next-intl/server';
+import Header from "../../components/Header";
+import Footer from "../../components/footer";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -110,7 +111,9 @@ interface RootLayoutProps {
 export default async function RootLayout({
   children,
   params: { locale },
+  
 }: RootLayoutProps) {
+    unstable_setRequestLocale(locale); // ← ДОДАЙ СЮДИ
   const availableLocales = ["en", "uk", "pl"];
   if (!availableLocales.includes(locale)) {
     notFound();

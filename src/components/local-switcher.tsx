@@ -26,13 +26,13 @@ export default function LocalSwitcher() {
       >
         <Flag code="UA" alt="Ukrainian Flag" width={24} height={16} />
       </button>
-      <button
+      {/* <button
         onClick={() => handleLanguageChange('en')}
         disabled={isPending}
         className={`p-2 rounded ${localActive === 'en' ? 'border-2' : ''}`}
       >
         <Flag code="GB" alt="English Flag" width={24} height={16} />
-      </button>
+      </button> */}
       <button
         onClick={() => handleLanguageChange('pl')}
         disabled={isPending}

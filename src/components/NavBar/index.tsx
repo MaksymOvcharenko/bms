@@ -64,13 +64,13 @@ export const NavBar = () => {
     <div className={styles.navbar}>
       <Link href={`/${locale}`}>{t("home")}</Link>
       <Link href={`/${locale}/services`}>{t("services")}</Link>
-      <Link href={`/${locale}/tariffs`}>{t("tariffs")}</Link>
-      <Link href={`/${locale}/calculator`}>{t("calculator")}</Link>
+      <Link href={`/${locale}/blog`}>{t("tariffs")}</Link>
+      {/* <Link href={`/${locale}/calculator`}>{t("calculator")}</Link>
       <Link href={`/${locale}/business`}>{t("business")}</Link>
       <Link href={`/${locale}/about`}>{t("about")}</Link>
       <Link href={`/${locale}/contacts`}>{t("contacts")}</Link>
       <Link href={`/${locale}/faq`}>{t("faq")}</Link>
-      <Link href={`/${locale}/promotions`}>{t("promotions")}</Link>
+      <Link href={`/${locale}/promotions`}>{t("promotions")}</Link> */}
     </div>
   );
 };
