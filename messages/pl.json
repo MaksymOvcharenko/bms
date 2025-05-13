@@ -31,5 +31,13 @@
     "facebook": "Facebook",
     "instagram": "Instagram",
     "tiktok": "TikTok"
+  },
+  "ServiceBtn": {
+    "btn": "Wyzita Serwisowa"
+  },
+  "ServiceVisit": {
+    "title": "Poznaj BLS – Twój partner w trosce o samochód",
+    "desc1": "Szukasz miejsca, gdzie Twoje BMW, MINI albo Rolls-Royce będzie naprawdę zadbane? Witaj w BLS! Od 2012 roku zajmujemy się serwisem tych marek z pełnym zaangażowaniem i pasją. Oferujemy wszystko — od diagnostyki po remont silnika, zawsze na oryginalnych częściach i z gwarancją.",
+    "desc2": "Działamy szybko, mamy własny magazyn części i zespół specjalistów, którzy wiedzą, co robią. A do tego – naprawiamy zgodnie z wymaganiami producenta. Zaufaj nam – Twój samochód jest w dobrych rękach!"
   }
 }

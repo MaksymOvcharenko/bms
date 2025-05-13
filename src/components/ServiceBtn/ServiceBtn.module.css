@@ -1,0 +1,20 @@
+.btn {
+  background: var(--primary);
+  border-radius: 16px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  color: var(--black);
+  transition: background 0.3s ease-in-out;
+}
+.btn:hover {
+  background: var(--primary-hover);
+}
