@@ -230,6 +230,14 @@ h3 {
   font-size: var(--fs-h3);
   line-height: var(--lh-32);
 }
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: var(--color-primary) !important;
+  font-size: 20px;
+}
+.swiper-pagination-bullet {
+  background: var(--color-primary) !important;
+}
 
 /* RESPONSIVE HEADINGS */
 @media (max-width: 1024px) {

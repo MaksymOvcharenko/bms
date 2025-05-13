@@ -1,0 +1,109 @@
+.section {
+  background: var(--black);
+  margin: 0 auto;
+  color: var(--color-white);
+  padding: 32px 16px;
+}
+/* .body {
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 80px 20px;
+  gap: 24px;
+  margin: 0 auto;
+} */
+.title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+
+  color: var(--white);
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 12px;
+}
+.btnLink {
+  all: inherit;
+  border: 1px solid var(--primary);
+  border-radius: 16px;
+  padding: 8px;
+  width: 100%;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  color: var(--primary);
+  transition: background 0.3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.btn div {
+  width: 100%;
+}
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  color: white;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.body {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 800px;
+  padding: 24px;
+  /* background: rgba(0, 0, 0, 0.4); напівпрозорий фон */
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.descr {
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.btn {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 24px;
+}
+/* Великі планшети і маленькі ноутбуки (від 768px) */
+@media (min-width: 768px) {
+}
+
+/* Десктопи (від 1280px) */
+@media (min-width: 1280px) {
+}
