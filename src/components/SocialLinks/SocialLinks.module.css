@@ -1,0 +1,23 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--color-white);
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.socials a:hover {
+  background-color: white;
+  color: var(--color-primary);
+}

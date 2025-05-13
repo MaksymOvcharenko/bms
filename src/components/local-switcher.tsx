@@ -1,45 +1,61 @@
 
 'use client';
 
+import { useState } from 'react';
 import { useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
-import { useTransition } from 'react';
 import Flag from 'react-world-flags';
+import { ChevronDown } from 'lucide-react';
+import styles from "./local-switcher.module.css"
 
-export default function LocalSwitcher() {
-  const [isPending, startTransition] = useTransition();
+export default function LocaleSwitcher() {
+  const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
-  const localActive = useLocale();
+  const localeActive = useLocale();
 
-  const handleLanguageChange = (locale: string) => {
-    startTransition(() => {
-      router.replace(`/${locale}`);
-    });
-  };
+  const languages = [
+    { code: 'uk', label: 'UA', flag: 'UA' },
+  
+    { code: 'pl', label: 'PL', flag: 'PL' },
+  ];
+
+  // const handleLanguageChange = (locale: string) => {
+  //   setIsOpen(false);
+  //   router.replace(`/${locale}`);
+  // };
+const handleLanguageChange = (locale: string) => {
+  setIsOpen(false);
+  router.replace(`/${locale}${window.location.pathname.replace(/^\/[a-z]{2}/, '')}`);
+};
 
   return (
-    <div className="flex space-x-2">
+    <div className={styles.switcher}>
       <button
-        onClick={() => handleLanguageChange('uk')}
-        disabled={isPending}
-        className={`p-2 rounded ${localActive === 'uk' ? 'border-2' : ''}`}
+        onClick={() => setIsOpen(!isOpen)}
+        className={styles.switcherBtn}
       >
-        <Flag code="UA" alt="Ukrainian Flag" width={24} height={16} />
+        
+        {/* <div className={styles.flag}><Flag code={languages.find((lang) => lang.code === localeActive)?.flag || 'UA'} width={52} height={52} /></div> */}
+        <div className={styles.lang}>
+          <span >{languages.find((lang) => lang.code === localeActive)?.label || 'UA'}</span>
+          <ChevronDown size={24} />
+        </div>
       </button>
-      {/* <button
-        onClick={() => handleLanguageChange('en')}
-        disabled={isPending}
-        className={`p-2 rounded ${localActive === 'en' ? 'border-2' : ''}`}
-      >
-        <Flag code="GB" alt="English Flag" width={24} height={16} />
-      </button> */}
-      <button
-        onClick={() => handleLanguageChange('pl')}
-        disabled={isPending}
-        className={`p-2 rounded ${localActive === 'pl' ? 'border-2' : ''}`}
-      >
-        <Flag code="PL" alt="Polish Flag" width={24} height={16} />
-      </button>
+
+      {isOpen && (
+        <div className={styles.modal}>
+          {languages.map(({ code, label, flag }) => (
+            <button
+              key={code}
+              onClick={() => handleLanguageChange(code)}
+              className={styles.modalBtn}
+            >
+              {/* <div className={styles.modalSpan}><Flag code={flag} width={20} height={20} /></div> */}
+              {label}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

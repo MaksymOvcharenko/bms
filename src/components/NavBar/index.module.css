@@ -1,5 +1,29 @@
 .navbar {
+}
+.nav {
   display: flex;
+  flex-direction: row;
   gap: 16px;
   justify-content: space-between;
+}
+.nav a {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  text-decoration: none;
+}
+.nav a:hover {
+  color: var(--color-primary);
+}
+@media (min-width: 320px) {
+}
+/* Великі планшети і маленькі ноутбуки (від 768px) */
+@media (min-width: 768px) {
+}
+
+/* Десктопи (від 1280px) */
+@media (min-width: 1280px) {
 }

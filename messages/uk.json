@@ -9,14 +9,12 @@
     },
     "Navigation": {
         "home": "Головна",
-        "services": "Послуги",
-        "tariffs": "Блог",
-        "calculator": "Калькулятор",
-        "business": "Бізнесам",
         "about": "Про нас",
-        "contacts": "Контакти",
-        "faq": "Часті питання",
-        "promotions": "Акції"
+        "services": "Послуги",
+        "gallery": "Галерея",
+        "reviews": "Відгуки",
+        "contact": "Контакти",
+        "blog": "Блог"
     },
     "Footer": {
         "copyright": "© 2024 Футер українська."

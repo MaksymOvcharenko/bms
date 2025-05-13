@@ -1,4 +1,4 @@
-/* Global CSS Reset */
+/* Global CSS Reset
 *,
 *::before,
 *::after {
@@ -71,7 +71,7 @@ blockquote {
 }
 
 /* Root Styles */
-:root {
+/* :root {
   --white: #fff;
   --black: #111;
   --gray: #63666a;
@@ -105,4 +105,138 @@ h3 {
 
 p {
   font-family: var(--second-family);
+}  */
+/* RESET */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Poppins:wght@500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #080807;
+  background-color: #ffffff;
+}
+button {
+  all: unset; /* Повністю обнуляє стилі */
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
+}
+/* VARIABLES */
+:root {
+  /* Colors */
+  --color-white: #ffffff;
+  --color-black: #080807;
+  --color-gray-section: #333333;
+  --color-gray: #bfbfbf;
+  --color-black-2nd: #262522;
+
+  --color-primary: #27aae1;
+  --color-primary-hover: #53bdea;
+  --color-primary-pressed: #208ab6;
+
+  /* Fonts */
+  --font-noto: "Noto Sans", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+
+  /* Font Sizes */
+  --fs-menu: 16px;
+  --fs-body: 16px;
+  --fs-h1: 32px;
+  --fs-h2: 28px;
+  --fs-h3: 20px;
+
+  /* Line Heights */
+  --lh-24: 24px;
+  --lh-28: 28px;
+  --lh-32: 32px;
+  --lh-36: 36px;
+  --lh-48: 48px;
+}
+
+/* TYPOGRAPHY */
+.menu-item {
+  font-family: var(--font-noto);
+  font-weight: 700;
+  font-size: var(--fs-menu);
+  line-height: var(--lh-24);
+}
+
+body {
+  font-family: var(--font-noto);
+  font-weight: 400;
+  font-size: var(--fs-body);
+  line-height: var(--lh-24);
+}
+
+h1 {
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  font-size: var(--fs-h1);
+  line-height: var(--lh-48);
+}
+
+h2 {
+  font-family: var(--font-noto);
+  font-weight: 500;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-36);
+}
+
+h3 {
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-32);
+}
+
+/* RESPONSIVE HEADINGS */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 320px) {
+}
+/* Великі планшети і маленькі ноутбуки (від 768px) */
+@media (min-width: 768px) {
+}
+
+/* Десктопи (від 1280px) */
+@media (min-width: 1280px) {
 }

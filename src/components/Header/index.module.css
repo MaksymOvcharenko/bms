@@ -1,13 +1,70 @@
 .header {
-  background: var(--black);
-  font-family: "Rounded Mplus 1c", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.04em;
+  background: var(--color-gray-section);
   color: var(--white);
-  padding: 16px 72px;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  padding: 8px 30px;
+}
+
+.nav {
+  display: none;
+}
+.mobMenu {
+  color: var(--color-white);
+  width: 40px;
+  height: 40px;
+}
+.socLink {
+  display: none;
+}
+/* Великі планшети і маленькі ноутбуки (від 768px) */
+@media (min-width: 768px) {
+  .socLink {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    gap: 8px;
+  }
+  .socLink a {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.06em;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+  }
+  .socLink a:hover {
+    color: var(--color-primary);
+  }
+  .socLinkTel {
+    display: none;
+  }
+}
+
+/* Десктопи (від 1280px) */
+@media (min-width: 1280px) {
+  .burger {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .header {
+    padding: 8px 72px;
+  }
+  .socLinkTel {
+    display: block;
+  }
 }
