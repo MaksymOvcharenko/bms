@@ -18,5 +18,11 @@
   },
   "Footer": {
     "copyright": "© 2024 Stopka po polsku."
+  },
+  "Contact": {
+    "title": "Jak nas znaleźć",
+    "we_wait": "Czekamy na Ciebie!",
+    "mon_fri": "Pon.–Pt.",
+    "sat": "Sob."
   }
 }

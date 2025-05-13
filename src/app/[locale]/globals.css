@@ -145,6 +145,13 @@ button {
   margin: 0;
   line-height: inherit;
 }
+a {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
 /* VARIABLES */
 :root {
   /* Colors */
@@ -160,6 +167,7 @@ button {
 
   /* Fonts */
   --font-noto: "Noto Sans", sans-serif;
+  --font-family: "Noto Sans", sans-serif;
   --font-poppins: "Poppins", sans-serif;
 
   /* Font Sizes */
