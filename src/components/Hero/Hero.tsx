@@ -42,10 +42,12 @@ export const Hero = () => {
       </video>
 
       <div className={s.body}>
-        <h1 className={s.title}>Serwice samochodówy BLS serwice</h1>
-        <p className={s.descr}>
-          Naprawa i serwis techniczny samochodów marki BMW, Mini i Rolls-Royce
-        </p>
+        <div>
+            <h1 className={s.title}>Serwice samochodówy BLS serwice</h1>
+            <p className={s.descr}>
+              Naprawa i serwis techniczny samochodów marki BMW, Mini i Rolls-Royce
+            </p>
+        </div>
         <div className={s.btn}>
           <a href="" className={s.btnLink}>
             <TfiMenuAlt size={20} />

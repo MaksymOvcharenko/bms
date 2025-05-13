@@ -56,21 +56,26 @@
 .section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
   display: flex;
-  align-items: center;
+
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* align-items:; */
   justify-content: center;
   color: white;
 }
 
 .video {
   position: absolute;
-  top: 100;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  /* object-position: center top;  */
   z-index: 0;
   margin: auto;
 }
@@ -80,13 +85,17 @@
   z-index: 1;
   text-align: center;
   max-width: 800px;
-  padding: 24px;
+  padding: 16px;
   /* background: rgba(0, 0, 0, 0.4); напівпрозорий фон */
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: space-between;
 }
 
 .title {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
 }
 
