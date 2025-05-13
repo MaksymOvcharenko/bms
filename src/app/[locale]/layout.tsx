@@ -98,8 +98,9 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { unstable_setRequestLocale } from 'next-intl/server';
 import Header from "../../components/Header";
-import Footer from "../../components/footer";
+
 import "./globals.css";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -1,0 +1,34 @@
+.footer {
+  background: var(--color-gray-section);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  padding: 16px 30px;
+}
+.footerText {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-white);
+}
+/* Великі планшети і маленькі ноутбуки (від 768px) */
+@media (min-width: 768px) {
+  .footer {
+    gap: 24px;
+  }
+}
+
+/* Десктопи (від 1280px) */
+@media (min-width: 1280px) {
+}

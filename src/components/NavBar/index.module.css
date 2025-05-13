@@ -5,6 +5,7 @@
   flex-direction: row;
   gap: 16px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .nav a {
   font-family: var(--font-family);
