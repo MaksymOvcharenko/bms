@@ -24,5 +24,12 @@
     "we_wait": "Czekamy na Ciebie!",
     "mon_fri": "Pon.–Pt.",
     "sat": "Sob."
+  },
+  "FollowSocLink": {
+    "title": "Bądź na bieżąco z naszym serwisem",
+    "descr": "Obserwuj nas w mediach społecznościowych i jako pierwszy poznawaj nowości, porady serwisowe, kulisy naszej pracy oraz zdjęcia z codziennego życia warsztatu BLS.",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "tiktok": "TikTok"
   }
 }

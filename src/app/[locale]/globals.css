@@ -165,6 +165,16 @@ a {
   --color-primary-hover: #53bdea;
   --color-primary-pressed: #208ab6;
 
+  --white: #ffffff;
+  --black: #080807;
+  --gray-section: #333333;
+  --gray: #bfbfbf;
+  --black-2nd: #262522;
+
+  --primary: #27aae1;
+  --primary-hover: #53bdea;
+  --primary-pressed: #208ab6;
+
   /* Fonts */
   --font-noto: "Noto Sans", sans-serif;
   --font-family: "Noto Sans", sans-serif;

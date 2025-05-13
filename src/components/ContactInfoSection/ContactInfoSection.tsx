@@ -38,7 +38,7 @@ export default function ContactInfoSection() {
             <p className={styles.address}>
               <LuMapPin size={20} />
               <strong>
-                <a href="https://maps.app.goo.gl/Fi2HuoBpcMQSGckf6">
+                <a href="https://maps.app.goo.gl/Fi2HuoBpcMQSGckf6" target="_blank" rel="noopener noreferrer">
                   Skrėcona 9, 31-587 Kraków
                 </a>
               </strong>
