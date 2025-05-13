@@ -92,6 +92,7 @@
   flex-direction: column;
   height: 80vh;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .title {
@@ -111,7 +112,10 @@
   margin-top: 24px;
 }
 /* Великі планшети і маленькі ноутбуки (від 768px) */
-@media (min-width: 768px) {
+@media (min-width: 400px) {
+  .video {
+    object-fit: cover;
+  }
 }
 
 /* Десктопи (від 1280px) */
