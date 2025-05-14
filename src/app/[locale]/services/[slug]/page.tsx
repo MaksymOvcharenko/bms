@@ -68,8 +68,9 @@ export default async function ServicePage({
           <div>{documentToReactComponents(service.fields.contents as Document)}</div>
         </div >
       </div>
+      
+      <FollowSocLink />
       <ContactInfoSection />
-      <FollowSocLink/>
     </>
   );
 }

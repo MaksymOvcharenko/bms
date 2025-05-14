@@ -19,9 +19,9 @@ export default function HomePage({ params }: { params: { locale: string } }) {
      
       <Gallery />
       <Reviews />
-    
-      <ContactInfoSection />
       <FollowSocLink />
+      <ContactInfoSection />
+      
     </>
   );
 }

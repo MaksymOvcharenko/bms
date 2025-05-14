@@ -1,7 +1,7 @@
 /* components/ContactInfoSection.module.css */
 
 .wrapper {
-  background-color: var(--color-gray-section);
+  background-color: var(--color-black);
   color: var(--color-white);
   padding: 32px 16px;
 }
