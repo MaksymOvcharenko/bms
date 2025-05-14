@@ -46,5 +46,9 @@
   "Gallery": {
     "title": "Galeria",
     "desc1": "Więcej realizacji i zakulisowych ujęć – tylko w socialach!"
+  },
+  "Blog": {
+    "blogSectionTitle": "Ekspercka wiedza i inspiracje motoryzacyjne",
+    "readMore": "Czytaj więcej"
   }
 }

@@ -1,46 +1,143 @@
-.blogContainer {
+.section {
+  background-color: var(--color-black);
+  padding: 40px 0;
+}
+.container {
   padding: 40px 20px;
-  max-width: 900px;
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
 }
 
-.blogPost {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  transition: 0.3s;
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+  border-top: 1px solid var(--gray);
+  padding-top: 12px;
 }
-
-.blogPost:hover {
-  opacity: 0.9;
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
 }
-
-.blogPost h2 {
-  font-size: 26px;
-  margin-bottom: 5px;
+.heading {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 40px;
 }
-
-.blogPost .date {
-  font-size: 13px;
-  color: #888;
-  margin-bottom: 10px;
-  display: block;
+.title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: var(--white);
 }
-
-.blogPost img {
+.descriptions p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: var(--white);
+}
+.image {
+  width: 168px;
   max-width: 100%;
   height: auto;
-  border-radius: 6px;
-  margin-top: 10px;
-}
-
-.postContent {
-  margin-top: 20px;
-  line-height: 1.7;
-}
-
-.postCover {
-  max-width: 100%;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin: 0 auto;
+}
+.link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+.link p {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  color: var(--primary);
+  transition: color 0.3s;
+}
+.link:hover p {
+  color: var(--white);
+}
+.link svg {
+  color: var(--primary);
+}
+.link:hover svg {
+  color: var(--white);
+}
+.date {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  text-align: left;
+  width: 100%;
+  color: var(--color-primary);
+}
+.pagination {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.pageLink {
+  padding: 6px 12px;
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.pageLink:hover {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+}
+
+.active {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+}
+
+/* Великі планшети і маленькі ноутбуки (від 768px) */
+@media (min-width: 768px) {
+  .item {
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
+}
+
+/* Десктопи (від 1280px) */
+@media (min-width: 1280px) {
+  .image {
+    width: 240px;
+  }
 }
