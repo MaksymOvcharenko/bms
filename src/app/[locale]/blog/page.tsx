@@ -55,7 +55,7 @@ const localeMap: Record<string, string> = {
   pl: "pl-PL",
 };
 
-const POSTS_PER_PAGE = 6;
+const POSTS_PER_PAGE = 3;
 
 export default async function BlogPage({
   params,
@@ -73,7 +73,13 @@ export default async function BlogPage({
     skip,
     limit: POSTS_PER_PAGE,
   });
-
+  const sortedItems = items.sort((a, b) => {
+    const dateA = a.fields.publishedDate ? new Date(String(a.fields.publishedDate)).getTime() : 0;
+    const dateB = b.fields.publishedDate ? new Date(String(b.fields.publishedDate)).getTime() : 0;
+    return dateB - dateA; // від нової до старої
+  });
+  
+  
   const headingText =
   params.locale === "uk"
     ? "Експертні знання та натхнення для автолюбителів"
@@ -90,7 +96,7 @@ const readMoreText = params.locale === "uk" ? "Читати далі" : "Czytaj 
           </h1>
     
           <ul className={styles.list}>
-            {items.map((post: any) => (
+            {sortedItems.map((post: any) => (
                 <li key={post.sys.id} className={styles.item}>
                     {post.fields.coverImage && (
                   <Image
@@ -122,7 +128,7 @@ const readMoreText = params.locale === "uk" ? "Читати далі" : "Czytaj 
             ))}
           </ul>
     
-          <div className={styles.pagination}>
+          {/* <div className={styles.pagination}>
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
               <Link
                 key={page}
@@ -134,7 +140,60 @@ const readMoreText = params.locale === "uk" ? "Читати далі" : "Czytaj 
                 {page}
               </Link>
             ))}
-          </div>
+          </div> */}
+              <div className={styles.pagination}>
+  {currentPage > 1 && (
+    <Link
+      href={`/${params.locale}/blog?page=${currentPage - 1}`}
+      className={styles.pageNav}
+    >
+      &lt; {params.locale === "pl" ? "Poprzednia" : "Попередня"}
+    </Link>
+  )}
+
+  {Array.from({ length: totalPages }, (_, i) => i + 1)
+    .filter((page) => {
+      return (
+        page === 1 ||
+        page === totalPages ||
+        Math.abs(page - currentPage) <= 1
+      );
+    })
+    .reduce((acc: (number | "...")[], page, i, arr) => {
+      if (i > 0 && typeof arr[i - 1] === "number" && page - (arr[i - 1] as number) > 1) {
+        acc.push("...");
+      }
+      acc.push(page);
+      return acc;
+    }, [])
+    .map((page, i) =>
+      page === "..." ? (
+        <span key={`dots-${i}`} className={styles.dots}>
+          ...
+        </span>
+      ) : (
+        <Link
+          key={page}
+          href={`/${params.locale}/blog?page=${page}`}
+          className={`${styles.pageLink} ${
+            page === currentPage ? styles.active : ""
+          }`}
+        >
+          {page}
+        </Link>
+      )
+    )}
+
+  {currentPage < totalPages && (
+    <Link
+      href={`/${params.locale}/blog?page=${currentPage + 1}`}
+      className={styles.pageNav}
+    >
+      {params.locale === "pl" ? "Następna" : "Наступна"} &gt;
+    </Link>
+  )}
+</div>
+
         </div>
     </div>
   );
