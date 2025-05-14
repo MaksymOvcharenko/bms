@@ -29,7 +29,7 @@ import { TfiMenuAlt } from "react-icons/tfi";
 export const Hero = () => {
   return (
     <div className={s.section}>
-          <video
+          {/* <video
               
         autoPlay
         muted
@@ -39,7 +39,18 @@ export const Hero = () => {
         poster="/images/heroImgFallback.jpg" // fallback зображення
       >
         <source src="/videos/hero-bg-4.mp4" type="video/mp4" />
-      </video>
+      </video> */}
+      <video
+              
+              autoPlay
+              muted
+              loop
+              playsInline
+              className={s.video}
+              poster="/images/heroImgFallback.jpg" // fallback зображення
+            >
+              <source src="/videos/hero-bg-5.mp4" type="video/mp4" />
+            </video>
 
       <div className={s.body}>
         <div>

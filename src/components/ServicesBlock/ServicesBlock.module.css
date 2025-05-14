@@ -1,0 +1,120 @@
+.container {
+  background-color: var(--color-black);
+}
+.section {
+  margin: 0 auto;
+  padding: 80px 20px;
+  max-width: 980px;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 52px;
+  text-align: center;
+  color: var(--color-white);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white);
+}
+
+.categoryBlock {
+  border: 1px solid var(--white);
+  border-radius: 12px;
+  /* background-color: var(--color-gray-section); */
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.categoryTitle {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--color-white);
+  background-color: transparent;
+  transition: background 0.2s ease;
+  list-style: none;
+}
+
+.categoryBlock[open] .categoryTitle {
+  background-color: var(--black-2nd);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.categoryBlock[open] {
+  border: 2px solid var(--color-primary);
+}
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.categoryBlock[open] .icon {
+  transform: rotate(180deg);
+}
+
+.serviceList {
+  padding: 16px;
+  background-color: var(--color-gray-section);
+  border-top: 1px solid var(--color-border);
+  border-radius: 0 0 12px 12px;
+}
+
+.serviceItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: var(--color-white);
+}
+
+.serviceItem a {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.serviceItem:hover a {
+  color: var(--color-primary);
+}
+.serviceItem:hover svg {
+  color: var(--color-primary);
+}
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.serviceList {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.categoryBlock[open] .serviceList {
+  animation: fadeSlideIn 0.6s ease forwards;
+}
+/* Великі планшети і маленькі ноутбуки (від 768px) */
+@media (min-width: 768px) {
+  .section {
+    margin: 0 auto;
+    padding: 80px 40px;
+  }
+}
+
+/* Десктопи (від 1280px) */
+@media (min-width: 1280px) {
+}

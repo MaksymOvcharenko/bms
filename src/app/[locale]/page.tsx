@@ -15,6 +15,8 @@ export default function HomePage({ params }: { params: { locale: string } }) {
       {/* <ServicesBlock locale={params.locale} /> */}
       <Hero />
       <ServiceVisit/> 
+      <ServicesBlock locale={params.locale} />
+     
       <Gallery />
       <Reviews />
     
