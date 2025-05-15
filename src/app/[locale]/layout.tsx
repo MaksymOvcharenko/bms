@@ -101,6 +101,7 @@ import Header from "../../components/Header";
 
 import "./globals.css";
 import Footer from "@/components/Footer/Footer";
+import { ToastContainer } from "react-toastify";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -137,6 +138,7 @@ export default async function RootLayout({
             <Header />
             <div className="flex-grow mt-20">{children}</div>
             <Footer />
+            <ToastContainer position="bottom-right" autoClose={2000} theme="dark" />
           </div>
         </NextIntlClientProvider>
       </body>

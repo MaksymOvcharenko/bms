@@ -5,22 +5,23 @@ import { Hero } from "@/components/Hero/Hero";
 import Reviews from "@/components/Reviews/Reviews";
 import ServicesBlock from "@/components/ServicesBlock/ServicesBlock";
 import ServiceVisit from "@/components/ServiceVisit/ServiceVisit";
+import ShortBlog from "@/components/ShortBlog/ShortBlog";
 
 
 export default function HomePage({ params }: { params: { locale: string } }) {
   return (
     <>
-      {/* <h1 className="text-4xl font-bold">Головна сторінка</h1> */}
      
-      {/* <ServicesBlock locale={params.locale} /> */}
-      <Hero />
-      <ServiceVisit/> 
-      <ServicesBlock locale={params.locale} />
+      <section id="main"><Hero /></section>
+      <section id="visit"><ServiceVisit/> </section>
+      <section id="service"><ServicesBlock locale={params.locale} /></section>
      
-      <Gallery />
-      <Reviews />
-      <FollowSocLink />
-      <ContactInfoSection />
+      <section id="gallery"><Gallery /></section>
+      <section id="reviews"><Reviews /></section>
+      <section id="blog"><ShortBlog params={{ locale: params.locale }} /></section>
+      <section id="contact"><ContactInfoSection /></section>
+      <section id="soclink"><FollowSocLink /></section>
+      
       
     </>
   );

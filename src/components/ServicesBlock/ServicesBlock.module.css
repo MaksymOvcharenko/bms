@@ -28,8 +28,13 @@
   /* background-color: var(--color-gray-section); */
   overflow: hidden;
   margin-bottom: 16px;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
-
+.categoryBlock:hover {
+  background-color: var(--black-2nd);
+  border-color: var(--color-primary);
+}
 .categoryTitle {
   padding: 16px;
   display: flex;

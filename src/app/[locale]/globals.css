@@ -125,7 +125,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Noto Sans", sans-serif;
   font-size: 16px;

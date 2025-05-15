@@ -50,5 +50,10 @@
     "Blog": {
         "blogSectionTitle": "Експертні знання та натхнення зі світу авто",
         "readMore": "Читати більше"
+    },
+    "Hero": {
+        "title": "Автосервіс BLS Service",
+        "description": "Ремонт і технічне обслуговування автомобілів марок BMW, Mini та Rolls-Royce",
+        "services": "Послуги"
     }
 }

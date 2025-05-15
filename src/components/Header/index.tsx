@@ -1,26 +1,4 @@
-// import { useTranslations } from 'next-intl';
-// import Image from 'next/image';  // Імпортуємо компонент Image
-// import LocalSwitcher from '../local-switcher';
-// import styles from './index.module.css';
-// import { NavBar } from '../NavBar';
-// import logo from '../../../public/images/bnslogo.png'; // Імпортуємо логотип
 
-// export default function Header() {
-//   const t = useTranslations('Navigation');
- 
-//   return (
-//     <header className={styles.header}>
-//       <Image 
-//         src={logo} 
-//         alt="BNS service" 
-//         width={86} // Встановіть необхідні розміри
-//         height={72} // Встановіть необхідні розміри
-//       />
-      
-    
-//     </header>
-//   );
-// }
 'use client';
 
 import { useState } from 'react';

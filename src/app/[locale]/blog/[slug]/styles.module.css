@@ -1,0 +1,166 @@
+.section {
+  background-color: var(--color-black);
+}
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  padding: 80px 20px;
+  max-width: 1120px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.back {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: var(--color-primary);
+  margin-right: auto;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--color-white);
+}
+
+.date {
+  font-size: 14px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+  margin-left: 20%;
+}
+
+.image {
+  width: 220px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.content {
+  color: var(--color-white);
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.navButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.navButtons a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: var(--font-family);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.wrapper h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--color-white);
+}
+.container {
+  background-color: var(--color-black);
+}
+.content {
+}
+.content h1 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: var(--white);
+}
+.image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 16px;
+}
+.content h3 {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  margin-bottom: 24px;
+  margin-top: 36px;
+}
+.content ul {
+  padding-left: 18px;
+}
+.content ul li {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: var(--white);
+}
+.content p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: var(--white);
+}
+.wrapper a {
+  transition: color 0.3s ease;
+}
+.wrapper a:hover {
+  color: var(--color-white);
+}
+/* Великі планшети і маленькі ноутбуки (від 768px) */
+@media (min-width: 768px) {
+  .content {
+    padding: 80px 30px;
+  }
+  .image {
+    width: 416px;
+    /* max-width: 600px; */
+    height: auto;
+    border-radius: 16px;
+  }
+}
+
+/* Десктопи (від 1280px) */
+@media (min-width: 1280px) {
+  .content {
+    padding: 110px 30px;
+  }
+}
+
+/* Великі планшети і маленькі ноутбуки (від 768px) */
+@media (min-width: 768px) {
+}
+
+/* Десктопи (від 1280px) */
+@media (min-width: 1280px) {
+}

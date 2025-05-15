@@ -22,11 +22,14 @@
 //     </div>
 //   );
 // };
+import Link from "next/link";
 import ServiceBtn from "../ServiceBtn/ServiceBtn";
 import s from "./Hero.module.css";
 import { TfiMenuAlt } from "react-icons/tfi";
+import { useTranslations } from "next-intl";
 
 export const Hero = () => {
+  const t = useTranslations("Hero");
   return (
     <div className={s.section}>
           {/* <video
@@ -54,16 +57,14 @@ export const Hero = () => {
 
       <div className={s.body}>
         <div>
-            <h1 className={s.title}>Serwice samochodówy BLS serwice</h1>
-            <p className={s.descr}>
-              Naprawa i serwis techniczny samochodów marki BMW, Mini i Rolls-Royce
-            </p>
+        <h1 className={s.title}>{t("title")}</h1>
+        <p className={s.descr}>{t("description")}</p>
         </div>
         <div className={s.btn}>
-          <a href="" className={s.btnLink}>
+          <Link href="#service" className={s.btnLink}>
             <TfiMenuAlt size={20} />
-            <p>Usługi</p>
-          </a>
+            <p>{t("services")}</p>
+          </Link>
           <ServiceBtn />
         </div>
       </div>

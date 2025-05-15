@@ -49,6 +49,11 @@
   align-items: center;
   justify-content: center;
   gap: 4px;
+  cursor: pointer;
+}
+.btnLink:hover {
+  color: var(--white);
+  border: 1px solid var(--white);
 }
 .btn div {
   width: 100%;

@@ -50,5 +50,10 @@
   "Blog": {
     "blogSectionTitle": "Ekspercka wiedza i inspiracje motoryzacyjne",
     "readMore": "Czytaj więcej"
+  },
+  "Hero": {
+    "title": "Serwice samochodówy BLS serwice",
+    "description": "Naprawa i serwis techniczny samochodów marki BMW, Mini i Rolls-Royce",
+    "services": "Usługi"
   }
 }
