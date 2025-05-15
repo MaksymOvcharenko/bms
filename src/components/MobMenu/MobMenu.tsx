@@ -62,11 +62,11 @@ export default function MobileMenu({ isOpen, onClose }: Props) {
       <nav className={styles.nav}>
       <div className={styles.switcher}><LocalSwitcher /></div>
         <Link href="/" onClick={onClose}><span>{t('home')}</span></Link>
-        <Link href="/about" onClick={onClose}><span>{t('about')}</span></Link>
-        <Link href="/services" onClick={onClose}><span>{t('services')}</span></Link>
-        <Link href="/gallery" onClick={onClose}><span>{t('gallery')}</span></Link>
-        <Link href="/reviews" onClick={onClose}><span>{t('reviews')}</span></Link>
-        <Link href="/contact" onClick={onClose}><span>{t('contact')}</span></Link>
+        <Link href="#soclink" onClick={onClose}><span>{t('about')}</span></Link>
+        <Link href="#service" onClick={onClose}><span>{t('services')}</span></Link>
+        <Link href="#gallery" onClick={onClose}><span>{t('gallery')}</span></Link>
+        <Link href="#reviews" onClick={onClose}><span>{t('reviews')}</span></Link>
+        <Link href="#contact" onClick={onClose}><span>{t('contact')}</span></Link>
         <Link href="/blog" onClick={onClose}><span>{t('blog')}</span></Link>
       </nav>
  
