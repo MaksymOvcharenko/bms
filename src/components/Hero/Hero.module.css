@@ -126,6 +126,6 @@
 /* Десктопи (від 1280px) */
 @media (min-width: 1280px) {
   .video {
-    object-fit: contain;
+    object-fit: cover;
   }
 }
