@@ -12,15 +12,15 @@ export default function HomePage({ params }: { params: { locale: string } }) {
   return (
     <>
      
-      <section id="main"><Hero /></section>
-      <section id="visit"><ServiceVisit/> </section>
-      <section id="service"><ServicesBlock locale={params.locale} /></section>
+      <section id="main" ><Hero /></section>
+      <section id="visit" ><ServiceVisit/> </section>
+      <section id="service" ><ServicesBlock locale={params.locale} /></section>
      
-      <section id="gallery"><Gallery /></section>
-      <section id="reviews"><Reviews /></section>
-      <section id="blog"><ShortBlog params={{ locale: params.locale }} /></section>
-      <section id="contact"><ContactInfoSection /></section>
-      <section id="soclink"><FollowSocLink /></section>
+      <section id="gallery" ><Gallery /></section>
+      <section id="reviews" ><Reviews /></section>
+      <section id="blog" ><ShortBlog params={{ locale: params.locale }} /></section>
+      <section id="contact" ><ContactInfoSection /></section>
+      <section id="soclink" ><FollowSocLink /></section>
       
       
     </>

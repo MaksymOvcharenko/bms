@@ -47,6 +47,7 @@
   line-height: 140%;
   letter-spacing: 0.04em;
   text-align: left;
+  width: 100%;
   color: var(--white);
 }
 .descriptions p {

@@ -243,6 +243,17 @@ h3 {
 .swiper-pagination-bullet {
   background: var(--color-primary) !important;
 }
+.reveal-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.reveal-section.visible {
+  opacity: 1;
+  transform: none;
+}
 
 /* RESPONSIVE HEADINGS */
 @media (max-width: 1024px) {

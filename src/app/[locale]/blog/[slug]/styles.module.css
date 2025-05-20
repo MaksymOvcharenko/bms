@@ -62,8 +62,13 @@
 
 .navButtons {
   display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
+  /* align-self: center;
+  justify-content: center; */
+  gap: 10px;
+  width: 100%;
 }
 
 .navButtons a {

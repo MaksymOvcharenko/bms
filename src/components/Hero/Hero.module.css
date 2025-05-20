@@ -96,6 +96,7 @@
   display: flex;
   flex-direction: column;
   height: 80vh;
+  gap: 30%;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -125,6 +126,24 @@
     object-fit: cover;
   }
 }
+
+/* Великі планшети і маленькі ноутбуки (від 768px) */
+@media (min-width: 768px) {
+  .btn {
+    flex-direction: row;
+    gap: 20%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .body {
+    width: 100%;
+    gap: 30%;
+    height: 50vh;
+  }
+}
+
+/* Десктопи (від 1280px) */
 
 /* Десктопи (від 1280px) */
 @media (min-width: 1280px) {
