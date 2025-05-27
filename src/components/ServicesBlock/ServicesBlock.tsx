@@ -16,6 +16,7 @@ const categoryNames: Record<number, Record<string, string>> = {
   3: { uk: "Шини", pl: "Montaż i demontaż opon" },
   4: { uk: "Інше", pl: "Inne usługi" },
   5: { uk: "Модифікації", pl: "Zaawansowane modyfikacje" },
+  
 };
 
 interface ServicesBlockProps {
