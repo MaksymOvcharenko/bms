@@ -14,7 +14,7 @@ export const Hero = () => {
               
               autoPlay
               muted
-              loop
+              // loop
               playsInline
               className={s.video}
               poster="/images/heroImgFallback.jpg" // fallback зображення
@@ -25,7 +25,7 @@ export const Hero = () => {
               
               autoPlay
               muted
-              loop
+              // loop
               playsInline
               className={s.videodesktop}
               poster="/images/heroImgFallback.jpg" // fallback зображення
