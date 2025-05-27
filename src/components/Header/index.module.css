@@ -1,5 +1,8 @@
+.body {
+  position: relative;
+}
 .header {
-  background: var(--color-black);
+  /* background: var(--color-black); */
 
   color: var(--white);
   display: flex;
@@ -11,10 +14,10 @@
   letter-spacing: 0.06em;
   color: var(--white);
   padding: 8px 30px;
-  /* position: absolute;
+  position: absolute;
   top: 0;
   z-index: 1000;
-  width: 100%; */
+  width: 100%;
 }
 
 .nav {

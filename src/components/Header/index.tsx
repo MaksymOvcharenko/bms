@@ -36,30 +36,32 @@ export default function Header() {
     return () => observer.disconnect();
   }, []);
   return (
-    <header className={styles.header}>
-      <Image 
-        src={logo} 
-        alt="BNS service" 
-        width={86}
-        height={72}
-      />
-       <nav className={styles.nav}>
-    
-        <NavBar />
-        <LocalSwitcher />
-      </nav>
-      <div className={styles.socLink}><SocialLinks />
-         <a href="tel:+4857777223" className={styles.socLinkTel}>+48 577772223</a></div>
-      <button
-        className={styles.burger}
-        onClick={toggleMenu}
-        aria-label="Toggle menu"
-      >
-       <RiMenuLine className={styles.mobMenu} color='#ffff' width={40} height={40} />
-      </button>
-      <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
-
-     
-    </header>
+    <div className={styles.body}>
+      <header className={styles.header}>
+        <Image 
+          src={logo} 
+          alt="BNS service" 
+          width={86}
+          height={72}
+        />
+         <nav className={styles.nav}>
+      
+          <NavBar />
+          <LocalSwitcher />
+        </nav>
+        <div className={styles.socLink}><SocialLinks />
+           <a href="tel:+4857777223" className={styles.socLinkTel}>+48 577772223</a></div>
+        <button
+          className={styles.burger}
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+         <RiMenuLine className={styles.mobMenu} color='#ffff' width={40} height={40} />
+        </button>
+        <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+  
+       
+      </header>
+    </div >
   );
 }
