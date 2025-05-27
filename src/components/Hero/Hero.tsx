@@ -19,7 +19,7 @@ export const Hero = () => {
               className={s.video}
               poster="/images/heroImgFallback.jpg" // fallback зображення
             >
-              <source src="/videos/hero-bg-10m.mp4" type="video/mp4" />
+              <source src="/videos/hero-bg-10m1.MOV" type="video/mp4" />
             </video>
             <video
               
@@ -30,7 +30,7 @@ export const Hero = () => {
               className={s.videodesktop}
               poster="/images/heroImgFallback.jpg" // fallback зображення
             >
-              <source src="/videos/hero-bg-10d.mp4" type="video/mp4" />
+              <source src="/videos/hero-bg-10d1.MOV" type="video/mp4" />
             </video>
       <div className={s.body}>
         <div>
