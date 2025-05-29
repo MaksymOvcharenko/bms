@@ -20,7 +20,9 @@ const ServiceVisit = () => {
                 <p className={s.descr}>{t('desc1')}
                 </p>
                 <p className={s.descr}>
-                {t('desc2')}</p>
+            {t('desc2')}</p>
+            <p className={s.descr}>
+            {t('desc3')}</p>
                 <div className={s.btn}><ServiceBtn /></div>
               </div>
               

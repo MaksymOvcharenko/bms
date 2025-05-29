@@ -41,7 +41,7 @@ export default async function ServicesBlock({ locale }: ServicesBlockProps) {
     <div className={styles.container}>
       <section className={styles.section}>
         <h2 className={styles.heading}>
-          {locale === "uk" ? "Сервіс від А до Я" : "Serwis od A do Z"}
+          {locale === "uk" ? "Сервіс від А до Я" : "NASZE USŁUGI Serwis samochodowy BLS Service jest wyposażony w najnowocześniejszy, oryginalny sprzęt do diagnozowania i naprawy samochodów marki BMW, MINI i ROLLS-ROYCE."}
         </h2>
   
         {Object.entries(grouped).map(([catKey, services]) => (

@@ -36,9 +36,10 @@
     "btn": "Wyzita Serwisowa"
   },
   "ServiceVisit": {
-    "title": "Poznaj BLS – Twój partner w trosce o samochód",
-    "desc1": "Szukasz miejsca, gdzie Twoje BMW, MINI albo Rolls-Royce będzie naprawdę zadbane? Witaj w BLS! Od 2012 roku zajmujemy się serwisem tych marek z pełnym zaangażowaniem i pasją. Oferujemy wszystko — od diagnostyki po remont silnika, zawsze na oryginalnych częściach i z gwarancją.",
-    "desc2": "Działamy szybko, mamy własny magazyn części i zespół specjalistów, którzy wiedzą, co robią. A do tego – naprawiamy zgodnie z wymaganiami producenta. Zaufaj nam – Twój samochód jest w dobrych rękach!"
+    "title": "Twoje BMW. Nasza pasja. Twój spokój.",
+    "desc1": "Serwis samochodowy BLS od 2012 roku skutecznie naprawia samochody BMW",
+    "desc2": "Oferujemy pełen zakres usług naprawczych - od diagnostyki pojazdu do kapitalnego remontu silnika. Zawsze zapewniamy gwarantowaną jakość pracy od naszych profesjonalistów i możesz być pewien niezawodnej pracy Twojego BMW.",
+    "desc3": "Uwaga! Obsługę samochodów marki BMW, MINI i ROLLS-ROYCE przeprowadzamy zgodnie z wymaganiami producenta."
   },
   "Reviews": {
     "title": "Opinie naszych klientów"
@@ -52,7 +53,7 @@
     "readMore": "Czytaj więcej"
   },
   "Hero": {
-    "title": "Serwice samochodówy BLS serwice",
+    "title": "BLS Service",
     "description": "Naprawa i serwis techniczny samochodów marki BMW, Mini i Rolls-Royce",
     "services": "Usługi"
   }

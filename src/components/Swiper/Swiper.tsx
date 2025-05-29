@@ -37,8 +37,8 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({ images }) => {
               <Image 
                 src={src} 
                 alt={`Slide ${index + 1}`} 
-                width={240} 
-                height={319} 
+                width={350} 
+                height={370} 
                 className={styles.image}
                 // style={{ objectFit: 'cover' }}
               />
