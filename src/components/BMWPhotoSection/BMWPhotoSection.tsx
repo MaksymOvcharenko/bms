@@ -11,15 +11,29 @@ const photos = [
 ];
 
 const BMWPhotoSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
-    }, 6000); // 4 секунди
-    return () => clearInterval(interval);
-  }, []);
+//   setCurrentIndex(0);
 
+const [currentIndex, setCurrentIndex] = useState<number | null>(null); // Початково null
+
+useEffect(() => {
+  // Одразу активуємо перше фото з невеликою затримкою
+  const initialTimeout = setTimeout(() => {
+    setCurrentIndex(0);
+  }, 10); // 100 мс затримки для спрацьовування transition
+
+  const interval = setInterval(() => {
+    setCurrentIndex((prevIndex) => {
+      if (prevIndex === null) return 0;
+      return (prevIndex + 1) % photos.length;
+    });
+  }, 4000);
+
+  return () => {
+    clearTimeout(initialTimeout);
+    clearInterval(interval);
+  };
+}, []);
   return (
     <section className={styles.photoSection}>
       {photos.map((photo, index) => (
