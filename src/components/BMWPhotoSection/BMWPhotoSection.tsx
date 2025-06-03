@@ -16,7 +16,7 @@ const BMWPhotoSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
-    }, 4000); // 4 секунди
+    }, 6000); // 4 секунди
     return () => clearInterval(interval);
   }, []);
 
