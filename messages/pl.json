@@ -56,5 +56,20 @@
     "title": "BLS Service",
     "description": "Naprawa i serwis techniczny samochodów marki BMW, Mini i Rolls-Royce",
     "services": "Usługi"
+  },
+  "ServicesCard": {
+    "mechanicalService": "Serwis mechaniczny",
+    "electricalService": "Usługi elektryczne",
+    "tuning": "Tuning",
+    "coding": "Kodowanie, programowanie",
+    "conversion": "Konwersja USA - EU",
+    "inspection": "Przegląd przedzakupowy",
+    "diagnostics": "Kompleksowa diagnostyka pojazdu",
+    "update": "Aktualizacja sterowników",
+    "carEquipment": "Doposażenie samochodu",
+    "crashRepair": "Naprawy powypadkowe",
+    "alarms": "Alarmy",
+    "vulcanization": "Wulkanizacja",
+    "moreDetails": "Więcej szczegółów"
   }
 }

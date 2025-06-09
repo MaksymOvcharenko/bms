@@ -4,6 +4,7 @@ import FollowSocLink from "@/components/FollowSocLink/FollowSocLink";
 import Gallery from "@/components/Gallery/Gallery";
 import { Hero } from "@/components/Hero/Hero";
 import Reviews from "@/components/Reviews/Reviews";
+import ServicesCard from "@/components/ServiceCard/ServiceCard";
 import ServicesBlock from "@/components/ServicesBlock/ServicesBlock";
 import ServiceVisit from "@/components/ServiceVisit/ServiceVisit";
 import ShortBlog from "@/components/ShortBlog/ShortBlog";
@@ -17,8 +18,8 @@ export default function HomePage({ params }: { params: { locale: string } }) {
       <section id="visit" ><ServiceVisit /> </section>
       <section id="BMWPhotoSection" ><BMWPhotoSection /></section>
       
-      <section id="service" ><ServicesBlock locale={params.locale} /></section>
-     
+      {/* <section id="service" ><ServicesBlock locale={params.locale} /></section> */}
+      <section id="service" ><ServicesCard /></section>
       <section id="gallery" ><Gallery /></section>
       <section id="reviews" ><Reviews /></section>
       <section id="blog" ><ShortBlog params={{ locale: params.locale }} /></section>

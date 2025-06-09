@@ -56,5 +56,20 @@
         "title": "Автосервіс BLS Service",
         "description": "Ремонт і технічне обслуговування автомобілів марок BMW, Mini та Rolls-Royce",
         "services": "Послуги"
+    },
+    "ServicesCard": {
+        "mechanicalService": "Сервіс механічний",
+        "electricalService": "Електричні послуги",
+        "tuning": "Тюнінг",
+        "coding": "Кодування, програмування",
+        "conversion": "Конверсія USA - EU",
+        "inspection": "Передпродажний огляд",
+        "diagnostics": "Комплексна діагностика",
+        "update": "Оновлення контролерів",
+        "carEquipment": "Доповнення авто",
+        "crashRepair": "Ремонт після ДТП",
+        "alarms": "Сигналізації",
+        "vulcanization": "Вулканізація",
+        "moreDetails": "Більше деталей"
     }
 }

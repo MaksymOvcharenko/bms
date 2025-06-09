@@ -1,0 +1,95 @@
+.section {
+  background-color: var(--color-black);
+  padding: 40px 20px;
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+/* Обмеження на максимум 3 колонки */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.card:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.details {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #00bfff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .title {
+  transform: translateY(-30px);
+}
+
+.card:hover .details {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .card {
+    height: 200px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .details {
+    font-size: 0.8rem;
+  }
+}
