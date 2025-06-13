@@ -12,16 +12,16 @@ type Service = {
 
 const services: Service[] = [
   { slug: "mechanical", translationKey: "mechanicalService", imageSrc: "/images/services/mechaniczny.png" },
-  { slug: "electrical", translationKey: "electricalService", imageSrc: "/services/electrical.jpg" },
-  { slug: "tuning", translationKey: "tuning", imageSrc: "/services/tuning.jpg" },
-  { slug: "coding", translationKey: "coding", imageSrc: "/services/coding.jpg" },
-  { slug: "conversion", translationKey: "conversion", imageSrc: "/services/conversion.jpg" },
+  { slug: "electrical", translationKey: "electricalService", imageSrc: "/images/services/uslugi-elektryczne.jpg" },
+  { slug: "tuning", translationKey: "tuning", imageSrc: "/images/services/Tuning.jpg"},
+  { slug: "coding", translationKey: "coding", imageSrc: "/images/services/kodowanie.jpg" },
+  { slug: "conversion", translationKey: "conversion", imageSrc: "/images/services/konwersjausa-eu.jpg" },
   { slug: "inspection", translationKey: "inspection", imageSrc: "/images/services/przedzakupowy.JPG" },
-  { slug: "diagnostics", translationKey: "diagnostics", imageSrc: "/services/diagnostics.jpg" },
-  { slug: "update", translationKey: "update", imageSrc: "/services/update.jpg" },
-  { slug: "carEquipment", translationKey: "carEquipment", imageSrc: "/services/car-equipment.jpg" },
-  { slug: "crashRepair", translationKey: "crashRepair", imageSrc: "/services/crash-repair.jpg" },
-  { slug: "alarms", translationKey: "alarms", imageSrc: "/services/alarms.jpg" },
+  { slug: "diagnostics", translationKey: "diagnostics", imageSrc: "/images/services/diagnostyka.jpg" },
+  { slug: "update", translationKey: "update", imageSrc: "/images/services/kodowanie.jpg" },
+  { slug: "carEquipment", translationKey: "carEquipment", imageSrc: "/images/services/Doposazenie.jpg" },
+  { slug: "crashRepair", translationKey: "crashRepair", imageSrc: "/images/services/powypadkowe.jpg" },
+  { slug: "alarms", translationKey: "alarms", imageSrc: "/images/services/alarm.jpg" },
   { slug: "vulcanization", translationKey: "vulcanization", imageSrc: "/images/services/wulkanizacja.JPG" }
 ];
 
