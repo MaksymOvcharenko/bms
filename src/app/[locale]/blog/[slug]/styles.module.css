@@ -103,7 +103,7 @@
 }
 .image {
   width: 100%;
-  max-width: 600px;
+  max-width: 852px;
   height: auto;
   border-radius: 16px;
 }
@@ -146,12 +146,6 @@
 @media (min-width: 768px) {
   .content {
     padding: 80px 30px;
-  }
-  .image {
-    width: 416px;
-    /* max-width: 600px; */
-    height: auto;
-    border-radius: 16px;
   }
 }
 
