@@ -9,7 +9,7 @@ const ServiceVisit = () => {
     <div className={s.section}>
       <div className={s.body}>
         <Image
-          src={"/images/visitCar.jpg"}
+          src={"/images/visitCar1.png"}
           width={330}
           height={330}
                   alt="Visita Servisova BLS Krakow"
@@ -21,8 +21,8 @@ const ServiceVisit = () => {
                 </p>
                 <p className={s.descr}>
             {t('desc2')}</p>
-            <p className={s.descr}>
-            {t('desc3')}</p>
+            {/* <p className={s.descr}>
+            {t('desc3')}</p> */}
                 <div className={s.btn}><ServiceBtn /></div>
               </div>
               

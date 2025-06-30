@@ -1,5 +1,5 @@
 .section {
-  background-color: var(--color-gray-section);
+  background-color: var(--color-black);
   padding: 40px 0;
 }
 .container {
@@ -59,7 +59,7 @@
   color: var(--white);
 }
 .image {
-  width: 168px;
+  width: 100%;
   max-width: 100%;
   height: auto;
   border-radius: 8px;
@@ -187,11 +187,16 @@
     flex-direction: row-reverse;
     gap: 40px;
   }
+  .image {
+    min-width: 322px;
+    flex: 1;
+  }
 }
 
 /* Десктопи (від 1280px) */
 @media (min-width: 1280px) {
   .image {
-    width: 240px;
+    min-width: 406px;
+    flex: 1;
   }
 }

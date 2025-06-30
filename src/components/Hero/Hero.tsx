@@ -35,7 +35,7 @@ export const Hero = () => {
       <div className={s.body}>
         <div>
         <h1 className={s.title}>{t("title")}</h1>
-        <p className={s.descr}>{t("description")}</p>
+        {/* <p className={s.descr}>{t("description")}</p> */}
         </div>
         <div className={s.btn}>
           <Link href="#service" className={s.btnLink}>

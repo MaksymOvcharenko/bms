@@ -1,6 +1,6 @@
 .section {
   width: 100%;
-  background: var(--color-gray-section);
+  background: var(--color-black);
 }
 .body {
   max-width: 1120px;
@@ -54,5 +54,8 @@
 @media (min-width: 1280px) {
   .title {
     font-size: 28px;
+  }
+  .img {
+    min-width: 422px;
   }
 }

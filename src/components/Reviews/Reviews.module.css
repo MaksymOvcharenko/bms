@@ -1,5 +1,5 @@
 .section {
-  background: var(--black);
+  background: var(--color-black);
   margin: 0 auto;
 }
 .body {

@@ -30,7 +30,8 @@ export default function ServicesCard() {
   const locale = useLocale();
 
   return (
-   <section className={styles.section}>
+    <section className={styles.section}>
+      <h2 className={styles.title}>{t("title")}</h2>
         <div className={styles.grid}>
           {services.map(({ slug, translationKey, imageSrc }) => (
             <Link

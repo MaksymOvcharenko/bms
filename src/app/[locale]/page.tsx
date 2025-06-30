@@ -22,8 +22,9 @@ export default function HomePage({ params }: { params: { locale: string } }) {
       <section id="service" ><ServicesCard /></section>
       <section id="gallery" ><Gallery /></section>
       <section id="reviews" ><Reviews /></section>
-      <section id="blog" ><ShortBlog params={{ locale: params.locale }} /></section>
       <section id="contact" ><ContactInfoSection /></section>
+      <section id="blog" ><ShortBlog params={{ locale: params.locale }} /></section>
+     
       <section id="soclink" ><FollowSocLink /></section>
       
       

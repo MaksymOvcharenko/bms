@@ -18,13 +18,15 @@ const Gallery = () => {
     const t = useTranslations('Gallery');
   return (
     <div className={s.section}>
-          <div className={s.body}>
-              <h3 className={s.title}>{t("title")}</h3>
-        <SwiperComponent images={GalleryImg} />
-        <div className={s.descr}>
+      <div className={s.body}>
+      <div className={s.descr}>
           <p className={s.descrText}>{t("desc1")}</p>
         </div>
-        <SocialLinks/>
+      <SocialLinks/>
+              {/* <h3 className={s.title}>{t("title")}</h3> */}
+        <SwiperComponent images={GalleryImg} />
+        
+       
       </div>
     </div>
   );
