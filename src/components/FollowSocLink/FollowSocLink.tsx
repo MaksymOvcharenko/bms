@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './FollowSocLink.module.css'
 import Image from 'next/image'
-import car from '../../../public/images/socLinkCar.jpg' // Імпортуємо логотип
+import car from '../../../public/images/mobileSoc.png' // Імпортуємо логотип
 import { useTranslations } from 'next-intl'
 import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa'
 const FollowSocLink = () => {
