@@ -93,7 +93,7 @@ const ServiceSection = () => {
           <div className={styles.block1}>
             <h2>{t("engine.title")}</h2>
             <Image
-              src="/images/services/mechanical/1.png"
+              src="/images/services/mechanical/mech1.jpg"
               alt="Silnik"
               width={800}
               height={500}
@@ -106,7 +106,7 @@ const ServiceSection = () => {
           <div className={styles.block2}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/images/services/mechanical/2.png"
+                src="/images/services/mechanical/mech2.jpg"
                 alt="Engine detail"
                 width={800}
                 height={500}
@@ -123,7 +123,7 @@ const ServiceSection = () => {
           <div className={styles.block3}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/images/services/mechanical/3.png"
+                src="/images/services/mechanical/mech3.jpg"
                 alt="Suspension"
                 width={800}
                 height={500}
@@ -140,7 +140,7 @@ const ServiceSection = () => {
           <div className={styles.block4}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/images/services/mechanical/4.png"
+                src="/images/services/mechanical/mech4.jpg"
                 alt="Oil change"
                 width={800}
                 height={500}
@@ -157,7 +157,7 @@ const ServiceSection = () => {
           <div className={styles.block5}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/images/services/mechanical/5.png"
+                src="/images/services/mechanical/mech5.jpg"
                 alt="Exhaust"
                 width={800}
                 height={500}

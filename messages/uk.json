@@ -71,5 +71,71 @@
         "alarms": "Сигналізації",
         "vulcanization": "Вулканізація",
         "moreDetails": "Більше деталей"
+    },
+    "Services": {
+        "Mechanical": {
+            "engine": {
+                "title": "Serwis Mechaniczny – POSTAW NA DOŚWIADCZENIE I PROFESJONALIZM BLS Serwisu",
+                "desc1": "Świadczymy kompleksowe usługi z zakresu mechaniki samochodowej.",
+                "desc2": "W BLS serwis mechaniczny to więcej niż rutynowe przeglądy i naprawy. To nasza pasja, w której łączymy wieloletnie doświadczenie z najnowocześniejszą technologią, aby zapewnić Twojemu samochodowi najwyższą jakość opieki. Nasz serwis jest wyposażony w nowoczesny sprzęt taki jak w ASO BMW/MINI/Rolls-Royce."
+            },
+            "engineDetail": {
+                "title": "Serwis silnika – maksymalna moc i optymalna wydajność",
+                "text": "Świadczymy kompleksowe usługi – od rutynowych przeglądów po skomplikowane naprawy. Dzięki precyzyjnej diagnostyce komputerowej szybko wykrywamy nawet najmniejsze usterki, co pozwala zapobiec poważniejszym awariom w przyszłości. Serwis układu rozrządu wykonujemy z dużą dokładnością, mając świadomość, jak ważny jest to element dla trwałości i niezawodności silnika."
+            },
+            "suspension": {
+                "title": "Zawieszenie – komfort i stabilność na drodze",
+                "text": "Oferujemy kompleksową diagnostykę i serwis zawieszenia, wykorzystując najnowocześniejsze technologie pomiarowe. Nasi wykwalifikowani technicy specjalizują się w wymianie amortyzatorów, sprężyn oraz innych elementów układu jezdnego. Dbamy o to, aby każda część współgrała idealnie, zapewniając optymalną charakterystykę jazdy."
+            },
+            "oil": {
+                "title": "Wymiana oleju, filtrów i płynów – sekret długowieczności Twojego silnika",
+                "text": "Systematyczna wymiana oleju to podstawa trwałości i niezawodnej pracy silnika. W BLS Serwic wykonujemy tę usługę z pełnym zaangażowaniem, zdając sobie sprawę, jak istotny wpływ ma ona na stan całego samochodu."
+            },
+            "exhaust": {
+                "title": "Tłumiki i układ wydechowy",
+                "text": "Przeprowadzamy naprawę układu wydechowego od A do Z, wymiana DPF, czyszczenie DPF, wymiana tłumików końcowych, jak i środkowych."
+            }
+        },
+        "Electrical": {
+            "hero": {
+                "title": "⚡ Електричні послуги",
+                "desc1": "У нашому сервісі BMW у Кракові ми надаємо комплексні електричні послуги, що охоплюють усі електронні системи та проводку у нових і старших моделях BMW.",
+                "desc2": "Використовуємо професійні діагностичні інструменти (ISTA/P, ISTA/D, висококласні мультиметри), що дозволяє швидко знаходити та усувати несправності."
+            },
+            "lighting": {
+                "title": "Світлотехнічна установка",
+                "list": [
+                    "Фари Full-LED, ксенон, адаптивні поворотні",
+                    "Заміна ламп, регулювання світла",
+                    "Калібрування після демонтажу/ремонту"
+                ]
+            },
+            "modules": {
+                "title": "Електронні модулі",
+                "list": [
+                    "Body Domain Controller, FRM, ZGW, KOMFORT",
+                    "Зчитування та видалення помилок",
+                    "Заміна і програмування нових блоків",
+                    "Діагностика CAN-Bus, ремонт після КЗ, захист контактів"
+                ]
+            },
+            "power": {
+                "title": "Система зарядки та запуску",
+                "list": [
+                    "Сервіс генератора та стартера",
+                    "Контроль системи акумулятор-зарядка",
+                    "Програмування адаптивних значень"
+                ]
+            },
+            "sensors": {
+                "title": "Датчики й системи допомоги",
+                "list": [
+                    "TPMS (тиск у шинах)",
+                    "ADAS (камера, радар)",
+                    "Датчики паркування та заднього ходу"
+                ]
+            },
+            "outro": "Перед початком ремонту проводимо детальну комп’ютерну діагностику та ручні тести. Після робіт виконуємо калібрування і дорожній тест. Хід робіт документуємо фото і технічним звітом."
+        }
     }
 }

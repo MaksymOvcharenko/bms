@@ -96,6 +96,47 @@
         "title": "Tłumiki i układ wydechowy",
         "text": "Przeprowadzamy naprawę układu wydechowego od A do Z, wymiana DPF, czyszczenie DPF, wymiana tłumików końcowych, jak i środkowych."
       }
+    },
+    "Electrical": {
+      "hero": {
+        "title": "⚡ Usługi elektryczne",
+        "desc1": "W naszym serwisie BMW w Krakowie oferujemy kompleksowe usługi elektryczne, obejmujące wszystkie systemy elektroniczne i okablowanie montowane w najnowszych i starszych modelach BMW.",
+        "desc2": "Korzystamy z profesjonalnych narzędzi diagnostycznych (ISTA/P, ISTA/D, multimetry wysokiej klasy), dzięki czemu szybko lokalizujemy i usuwamy usterki w instalacjach pojazdu."
+      },
+      "lighting": {
+        "title": "Instalacja oświetlenia",
+        "list": [
+          "Reflektory Full-LED, ksenon, adaptacyjne kierunkowe",
+          "Wymiana żarówek, regulacja świateł",
+          "Kalibracja po demontażu/naprawach"
+        ]
+      },
+      "modules": {
+        "title": "Moduły elektroniczne",
+        "list": [
+          "Body Domain Controller, FRM, ZGW, KOMFORT",
+          "Odczyt i kasowanie błędów",
+          "Wymiana i programowanie nowych jednostek",
+          "Diagnostyka sieci CAN-Bus, naprawy po zwarciach, ochrona styków"
+        ]
+      },
+      "power": {
+        "title": "Układ ładowania i rozruchu",
+        "list": [
+          "Serwis alternatora i rozrusznika",
+          "Kontrola akumulator-ładowanie",
+          "Programowanie wartości adaptacyjnych"
+        ]
+      },
+      "sensors": {
+        "title": "Czujniki i systemy wspomagania",
+        "list": [
+          "TPMS (ciśnienie opon)",
+          "ADAS (kamera, radar)",
+          "Czujniki parkowania i cofania"
+        ]
+      },
+      "outro": "Każdą naprawę poprzedzamy szczegółową diagnostyką komputerową oraz testami manualnymi. Po zakończeniu wykonujemy kalibracje i test drogowy. Dokumentujemy prace zdjęciami i raportem technicznym."
     }
   }
 }
