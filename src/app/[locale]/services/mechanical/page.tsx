@@ -82,6 +82,7 @@ import { useTranslations } from "next-intl";
 import styles from "./ServiceSection.module.css";
 import ContactInfoSection from "@/components/ContactInfoSection/ContactInfoSection";
 import FollowSocLink from "@/components/FollowSocLink/FollowSocLink";
+import GradientBar from "@/components/Animations";
 
 const ServiceSection = () => {
   const t = useTranslations("Services.Mechanical");
@@ -99,7 +100,8 @@ const ServiceSection = () => {
               height={500}
             />
             <p>{t("engine.desc1")}</p>
-            <p>{t("engine.desc2")}</p>
+          <p>{t("engine.desc2")}</p>
+           <GradientBar />
           </div>
     
           {/* 2 */}
