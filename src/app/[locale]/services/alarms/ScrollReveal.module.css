@@ -1,0 +1,92 @@
+/* НІЧОГО не зачіпає твої класи. Лише додає прозорість/зсув і анімацію */
+
+.sr {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.srChild {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Дрібні затримки для стегера */
+.delay1 {
+  transition-delay: 80ms;
+}
+.delay2 {
+  transition-delay: 160ms;
+}
+.delay3 {
+  transition-delay: 240ms;
+}
+
+@supports (animation-timeline: view()) {
+  @keyframes srFadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(22px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes srFadeUpChild {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .sr {
+    animation: srFadeUp 720ms both;
+    animation-timeline: view();
+    /* старт: коли елемент зайшов на 12% у в’юпорт, кінець — при 35% покриття */
+    animation-range: entry 12% cover 35%;
+  }
+
+  .srChild {
+    animation: srFadeUpChild 720ms both;
+    animation-timeline: view();
+    animation-range: entry 12% cover 35%;
+  }
+
+  /* ті ж затримки як анімаційні */
+  .delay1 {
+    animation-delay: 80ms;
+  }
+  .delay2 {
+    animation-delay: 160ms;
+  }
+  .delay3 {
+    animation-delay: 240ms;
+  }
+}
+
+/* Фолбек: без підтримки view-timeline просто показуємо елементи */
+@supports not (animation-timeline: view()) {
+  .sr,
+  .srChild {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Доступність */
+@media (prefers-reduced-motion: reduce) {
+  .sr,
+  .srChild {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

@@ -18,7 +18,7 @@ const services: Service[] = [
   { slug: "conversion", translationKey: "conversion", imageSrc: "/images/services/konwersjausa-eu.jpg" },
   { slug: "inspection", translationKey: "inspection", imageSrc: "/images/services/przedzakupowy.JPG" },
   { slug: "diagnostics", translationKey: "diagnostics", imageSrc: "/images/services/diagnostyka.jpg" },
-  { slug: "update", translationKey: "update", imageSrc: "/images/services/kodowanie.jpg" },
+  { slug: "sterowniky", translationKey: "update", imageSrc: "/images/services/kodowanie.jpg" },
   { slug: "carEquipment", translationKey: "carEquipment", imageSrc: "/images/services/Doposazenie.jpg" },
   { slug: "crashRepair", translationKey: "crashRepair", imageSrc: "/images/services/powypadkowe.jpg" },
   { slug: "alarms", translationKey: "alarms", imageSrc: "/images/services/alarm.jpg" },

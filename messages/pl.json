@@ -98,45 +98,210 @@
       }
     },
     "Electrical": {
-      "hero": {
-        "title": "⚡ Usługi elektryczne",
-        "desc1": "W naszym serwisie BMW w Krakowie oferujemy kompleksowe usługi elektryczne, obejmujące wszystkie systemy elektroniczne i okablowanie montowane w najnowszych i starszych modelach BMW.",
-        "desc2": "Korzystamy z profesjonalnych narzędzi diagnostycznych (ISTA/P, ISTA/D, multimetry wysokiej klasy), dzięki czemu szybko lokalizujemy i usuwamy usterki w instalacjach pojazdu."
+      "title": "Usługi elektryczne",
+      "intro": "W naszym serwisie BMW w Krakowie oferujemy kompleksowe usługi elektryczne, obejmujące wszystkie systemy elektroniczne i okablowanie montowane w najnowszych i starszych modelach BMW. Dzięki zastosowaniu profesjonalnych narzędzi diagnostycznych, takich jak interfejsy ISTA/P, ISTA/D oraz multimetrami wysokiej klasy, jesteśmy w stanie szybko zlokalizować i usunąć wszelkie awarie.",
+      "engine": {
+        "title": "Elektryk samochodowy BMW – fachowa diagnoza",
+        "desc": "Dzięki profesjonalnemu sprzętowi jesteśmy w stanie szybko zlokalizować przyczynę problemu i skutecznie ją usunąć. Naprawa elektryki w BMW obejmuje m.in. alternatory, rozruszniki, moduły komfortu, oświetlenie, centralne zamki, a także komputer sterujący silnika. Stosujemy wyłącznie sprawdzone części i procedury zgodne z zaleceniami producenta."
       },
-      "lighting": {
-        "title": "Instalacja oświetlenia",
-        "list": [
-          "Reflektory Full-LED, ksenon, adaptacyjne kierunkowe",
-          "Wymiana żarówek, regulacja świateł",
-          "Kalibracja po demontażu/naprawach"
-        ]
+      "suspension": {
+        "title": "Naprawa instalacji elektrycznej BMW – doświadczenie i jakość",
+        "desc": "Nasz zespół to wykwalifikowani mechanicy i elektrycy, którzy od lat specjalizują się w marce BMW. Dzięki temu możemy zaoferować kompleksową obsługę zarówno dla starszych modeli E i F seria, jak i najnowszych G oraz U serii. Każda naprawa elektryki BMW wykonywana jest z najwyższą starannością, aby zapewnić niezawodność i bezpieczeństwo."
       },
-      "modules": {
-        "title": "Moduły elektroniczne",
-        "list": [
-          "Body Domain Controller, FRM, ZGW, KOMFORT",
-          "Odczyt i kasowanie błędów",
-          "Wymiana i programowanie nowych jednostek",
-          "Diagnostyka sieci CAN-Bus, naprawy po zwarciach, ochrona styków"
-        ]
+      "service": {
+        "title": "Serwis BMW – gwarancja sprawności i komfortu jazdy",
+        "desc": "Oddając samochód do BLS Servicu, zyskujesz pewność, że zostanie on naprawiony szybko i skutecznie. Każdy etap naprawy poprzedza szczegółowa, komputerowa diagnostyka oraz test manualny wszystkich obwodów. Po zakończeniu napraw wykonujemy kalibracje i test drogowy w celu potwierdzenia prawidłowego działania. Zawsze udokumentowujemy przebieg prac zdjęciami i raportem technicznym, dzięki czemu masz pełną kontrolę nad stanem elektrycznym swojego BMW."
+      }
+    },
+    "Tuning": {
+      "title": "Tuning",
+      "block1": {
+        "title": "Tuning BMW – profesjonalny serwis i personalizacja",
+        "desc": "Specjalizujemy się w usługach takich jak chip tuning BMW, modernizacja układu wydechowego, zawieszenia oraz montaż akcesoriów sportowych. Jeśli szukasz miejsca, gdzie wykonasz tuning BMW, nasz serwis zapewni Ci najwyższą jakość usług i indywidualne podejście."
       },
-      "power": {
-        "title": "Układ ładowania i rozruchu",
-        "list": [
-          "Serwis alternatora i rozrusznika",
-          "Kontrola akumulator-ładowanie",
-          "Programowanie wartości adaptacyjnych"
-        ]
+      "block2": {
+        "title": "Chip tuning BMW – więcej mocy i lepsze osiągi",
+        "desc": "Dzięki nowoczesnemu sprzętu komputerowemu jesteśmy w stanie zoptymalizować pracę silnika, zwiększyć moc oraz moment obrotowy, przy jednoczesnym zachowaniu bezpieczeństwa i niezawodności. Każdy chip tuning BMW wykonujemy zgodnie z zaleceniami producenta i z wykorzystaniem sprawdzonych rozwiązań."
       },
-      "sensors": {
-        "title": "Czujniki i systemy wspomagania",
-        "list": [
-          "TPMS (ciśnienie opon)",
-          "ADAS (kamera, radar)",
-          "Czujniki parkowania i cofania"
-        ]
+      "block3": {
+        "title": "Tuning wizualny i mechaniczny BMW",
+        "desc": "Poza zmianami w oprogramowaniu oferujemy również tuning optyczny BMW, obejmujący montaż aerodynamicznych pakietów, felg, sportowych układów hamulcowych i zawieszenia. Dzięki temu Twój samochód zyska nie tylko lepsze osiągi, ale i wyjątkowy wygląd, który wyróżni go na drodze."
       },
-      "outro": "Każdą naprawę poprzedzamy szczegółową diagnostyką komputerową oraz testami manualnymi. Po zakończeniu wykonujemy kalibracje i test drogowy. Dokumentujemy prace zdjęciami i raportem technicznym."
+      "block4": {
+        "title": "Tuning BMW – indywidualne podejście",
+        "desc": "Każdy projekt realizujemy według potrzeb klienta, dbając o detale i pełną satysfakcję. Jeśli interesuje Cię tuning BMW – zarówno chip tuning, jak i tuning wizualny – skontaktuj się z nami. Zadbamy o to, aby Twoje BMW było jeszcze bardziej dynamiczne, efektowne i dopasowane do Twojego stylu jazdy."
+      }
+    },
+    "Kodowanie": {
+      "title": "Kodowanie i programowanie BMW – nowoczesny serwis",
+      "block1": {
+        "title": "Kodowanie i programowanie BMW – nowoczesny serwis",
+        "desc": "Oferujemy profesjonalne kodowanie BMW oraz kompleksowe programowanie modułów i sterowników. Dzięki tej usłudze możliwe jest odblokowanie ukrytych funkcji, personalizacja ustawień oraz dostosowanie auta do indywidualnych potrzeb kierowcy."
+      },
+      "block2": {
+        "title": "Programowanie BMW – pełna funkcjonalność i bezpieczeństwo",
+        "desc": "Specjalistyczny sprzęt diagnostyczny pozwala nam przeprowadzić programowanie sterowników BMW zgodnie z najnowszymi standardami producenta. Aktualizujemy oprogramowanie, przywracamy poprawne działanie modułów oraz wprowadzamy zmiany poprawiające komfort i bezpieczeństwo jazdy."
+      },
+      "block3": {
+        "title": "Kodowanie funkcji BMW – indywidualne ustawienia",
+        "desc": "W ramach usługi zajmujemy się m.in. aktywacją Apple CarPlay, zmianą ustawień komfortowych, dostosowaniem systemu multimedialnego, a także kodowaniem po wymianie akumulatora czy nowego modułu. Nasz serwis to idealne miejsce, jeśli interesuje Cię kodowanie BMW."
+      },
+      "block4": {
+        "title": "Profesjonalny serwis BMW – kodowanie i programowanie",
+        "desc": "Każde zlecenie realizujemy z najwyższą starannością, korzystając wyłącznie z oryginalnych lub sprawdzonych narzędzi. Jeżeli szukasz fachowców od programowania i kodowania BMW, skontaktuj się z nami – zapewnimy pełną obsługę oraz indywidualne dopasowanie funkcji Twojego samochodu."
+      }
+    },
+    "Conversion": {
+      "title": "Konwersja BMW z USA na EU – profesjonalny serwis",
+      "block1": {
+        "title": "Konwersja BMW z USA na EU – profesjonalny serwis",
+        "desc": "Specjalizujemy się w kompleksowej usłudze konwersja BMW USA – EU, która obejmuje pełne dostosowanie samochodów sprowadzonych z Ameryki do europejskich standardów. Dzięki naszej wiedzy i doświadczeniu Twój BMW będzie w pełni zgodny z wymogami technicznymi i prawnymi obowiązującymi w Unii Europejskiej."
+      },
+      "block2": {
+        "title": "Przeróbka świateł i elektroniki BMW z USA",
+        "desc": "Najczęstszym etapem jest zmiana oświetlenia BMW USA na EU, czyli dostosowanie reflektorów, świateł tylnych i kierunkowskazów do europejskich norm. Oferujemy również programowanie i kodowanie BMW USA – EU, które pozwala na poprawne działanie systemów multimedialnych, nawigacji i liczników oraz radia."
+      },
+      "block3": {
+        "title": "Dostosowanie licznika i systemów BMW",
+        "desc": "W ramach konwersji wykonujemy zmianę jednostek BMW USA – EU, m.in. prędkościomierza z mil na kilometry, temperatury z Fahrenheita na Celsjusze, a także ustawienia radia i map na wersję europejską. Wszystkie prace wykonujemy zgodnie z najwyższymi standardami serwisowymi."
+      },
+      "block4": {
+        "title": "Konwersja BMW USA Warszawa – pełna obsługa",
+        "desc": "Jeżeli sprowadziłeś auto z Ameryki i chcesz w pełni cieszyć się jego użytkowaniem w Europie, skorzystaj z naszej usługi. Profesjonalna konwersja BMW USA – EU to gwarancja bezpieczeństwa, zgodności z przepisami i komfortu jazdy. Skontaktuj się z nami i umów wizytę w serwisie."
+      }
+    },
+    "Przedzakupowy": {
+      "title": "Przegląd przedzakupowy BMW – pewność i bezpieczeństwo",
+      "block1": {
+        "title": "Przegląd przedzakupowy BMW – pewność i bezpieczeństwo",
+        "desc": "Zakup samochodu to poważna decyzja, dlatego warto skorzystać z profesjonalnej usługi przegląd przedzakupowy BMW. Dzięki szczegółowej weryfikacji stanu technicznego zyskujesz pewność, że wybrany pojazd jest w dobrym stanie i nie kryje kosztownych usterek."
+      },
+      "block2": {
+        "title": "Dokładna diagnostyka BMW przed zakupem",
+        "desc": "Podczas przeglądu BMW przed zakupem sprawdzamy m.in. układ elektryczny, silnik, zawieszenie, hamulce, elektronikę oraz historię serwisową auta. Korzystamy z profesjonalnych urządzeń diagnostycznych, które pozwalają wykryć nawet drobne nieprawidłowości, niewidoczne na pierwszy rzut oka."
+      },
+      "block3": {
+        "title": "Przegląd BMW z USA i Europy",
+        "desc": "Oferujemy również kompleksową kontrolę samochodów sprowadzanych zza granicy. Niezależnie od tego, czy jest to BMW z USA czy z rynku europejskiego, nasz zespół sprawdzi zgodność pojazdu z wymaganiami oraz oszacuje ewentualne koszty napraw."
+      },
+      "block4": {
+        "title": "Przegląd przedzakupowy BMW – dlaczego warto?",
+        "desc": "Z nami unikniesz nieprzewidzianych wydatków i ryzyka zakupu auta z ukrytymi wadami. Profesjonalny przegląd BMW przed zakupem to inwestycja w bezpieczeństwo i komfort. Skontaktuj się z nami i umów wizytę – pomożemy Ci podjąć świadomą decyzję przed zakupem Twojego BMW."
+      }
+    },
+    "Diagnostics": {
+      "title": "Kompleksowa diagnostyka BMW – pełna kontrola Twojego auta",
+      "block1": {
+        "title": "Kompleksowa diagnostyka BMW – pełna kontrola Twojego auta",
+        "desc": "Nowoczesne samochody marki BMW są wyposażone w zaawansowane systemy elektroniczne i mechaniczne, dlatego regularna kompleksowa diagnostyka BMW jest kluczowa dla bezpieczeństwa i niezawodności pojazdu. Nasz serwis oferuje pełną kontrolę wszystkich układów, aby wykryć usterki zanim staną się poważnym problemem."
+      },
+      "block2": {
+        "title": "Profesjonalna diagnostyka komputerowa BMW",
+        "desc": "Dzięki oryginalnym testerom i specjalistycznemu sprzętowi wykonujemy dokładne sprawdzenie elektroniki i sterowników BMW. Odczytujemy błędy z komputera pokładowego, analizujemy pracę silnika, skrzyni biegów, układu ABS, poduszek powietrznych oraz modułów komfortu. To pozwala na szybkie i trafne wskazanie źródła problemu."
+      },
+      "block3": {
+        "title": "Diagnostyka mechaniczna i elektryczna BMW",
+        "desc": "W ramach usługi przeprowadzamy również kontrolę układu zawieszenia, hamulców, układu wydechowego oraz instalacji elektrycznej. Nasz zespół specjalistów zapewnia kompleksową obsługę, dzięki czemu masz pewność, że Twój BMW jest w pełni sprawny i bezpieczny."
+      },
+      "block4": {
+        "title": "Kompleksowa diagnostyka BMW – dlaczego my?",
+        "desc": "Każdy przegląd realizujemy z najwyższą starannością, korzystając z wieloletniego doświadczenia i wiedzy o marce BMW. Profesjonalna kompleksowa diagnostyka BMW pozwala uniknąć kosztownych napraw i zapewnia spokój na lata. Skontaktuj się z nami i umów wizytę w naszym serwisie."
+      }
+    },
+    "Sterownikow": {
+      "title": "Aktualizacja sterowników BMW – nowoczesny serwis",
+      "block1": {
+        "title": "Aktualizacja sterowników BMW – nowoczesny serwis",
+        "desc": "Regularna aktualizacja sterowników BMW to klucz do niezawodności, bezpieczeństwa i pełnej funkcjonalności Twojego samochodu. Nowe wersje oprogramowania poprawiają pracę układów, eliminują błędy oraz dodają najnowsze funkcje producenta."
+      },
+      "block2": {
+        "title": "Dlaczego warto aktualizować sterowniki BMW?",
+        "desc": "Aktualizacje obejmują m.in. sterowniki silnika, skrzyni biegów, ABS, systemów multimedialnych i komfortu. Dzięki temu BMW działa płynniej, szybciej reaguje na polecenia i zużywa mniej paliwa. Aktualizacja sterowników pozwala również na zwiększenie kompatybilności z urządzeniami mobilnymi i mapami nawigacji."
+      },
+      "block3": {
+        "title": "Profesjonalna aktualizacja oprogramowania BMW",
+        "desc": "W naszym serwisie korzystamy z oryginalnych narzędzi diagnostycznych, które gwarantują bezpieczną i skuteczną aktualizację. Każdy proces programowania i aktualizacji BMW wykonujemy zgodnie z procedurami producenta, co eliminuje ryzyko błędów i zapewnia pełną ochronę systemów pojazdu."
+      },
+      "block4": {
+        "title": "Aktualizacja sterowników BMW – gwarancja jakości",
+        "desc": "Jeśli zauważyłeś problemy z elektroniką, wolne działanie systemów lub chcesz mieć pewność, że Twoje BMW korzysta z najnowszych rozwiązań, skontaktuj się z nami. Profesjonalna aktualizacja sterowników BMW w Warszawie to inwestycja w komfort, bezpieczeństwo i bezawaryjną jazdę."
+      }
+    },
+    "Doposazenie": {
+      "title": "Doposażenie BMW – więcej komfortu i nowoczesnych funkcji",
+      "block1": {
+        "title": "Doposażenie BMW – więcej komfortu i nowoczesnych funkcji",
+        "desc": "Oferujemy profesjonalne doposażenie samochodu BMW, które pozwala rozbudować Twój pojazd o brakujące funkcje i systemy. Dzięki temu możesz cieszyć się wygodą i technologią dostępną w najnowszych modelach, bez konieczności wymiany auta."
+      },
+      "block2": {
+        "title": "Najczęściej wybierane doposażenia BMW",
+        "desc": "Realizujemy m.in. montaż kamer cofania i systemów 360°, czujników parkowania, tempomatu, świateł LED, nagłośnienia premium, a także aktywację ukrytych funkcji w systemie multimedialnym typu Apple Carplay. Każde doposażenie BMW wykonujemy zgodnie z zaleceniami producenta."
+      },
+      "block3": {
+        "title": "Profesjonalny montaż i kodowanie BMW",
+        "desc": "Doposażenie samochodu często wymaga nie tylko instalacji nowych podzespołów, ale też programowania i kodowania BMW. Nasz serwis dysponuje oryginalnym sprzętem diagnostycznym, dzięki czemu wszystkie funkcje działają jak w fabrycznych konfiguracjach."
+      },
+      "block4": {
+        "title": "Doposażenie samochodu BMW – dlaczego my?",
+        "desc": "Stawiamy na indywidualne podejście i najwyższą jakość usług. Jeśli szukasz miejsca, gdzie profesjonalnie wykonasz doposażenie BMW, skontaktuj się z nami – sprawimy, że Twój samochód zyska nowe możliwości i jeszcze większy komfort jazdy."
+      }
+    },
+    "Powypadkowe": {
+      "title": "Naprawy powypadkowe BMW – profesjonalna obsługa",
+      "block1": {
+        "title": "Naprawy powypadkowe BMW – kompleksowa obsługa",
+        "desc": "W BLS Service specjalizujemy się w kompleksowej obsłudze napraw powypadkowych samochodów marki BMW, koncentrując się na precyzyjnej diagnostyce i naprawach mechanicznych oraz elektronicznych. Naszym celem jest przywrócenie Twojego auta do pełnej sprawności i bezpieczeństwa, bez konieczności malowania czy prostowania karoserii — nie wykonujemy usług lakierniczych ani blacharskich."
+      },
+      "block2": {
+        "title": "Pełna sprawność i bezpieczeństwo po naprawach",
+        "desc": "Nasze podejście skupia się na tym, by auto po naprawach mechanicznych było w pełni sprawne i bezpieczne, gotowe do dalszej eksploatacji lub do przekazania do dalszych prac blacharsko-lakierniczych. Dzięki temu możesz mieć pewność, że wszystkie kluczowe podzespoły działają bez zarzutu i spełniają najwyższe standardy BMW."
+      },
+      "block3": {
+        "title": "Wsparcie formalne i dokumentacja szkody",
+        "desc": "Zapewniamy także profesjonalne wsparcie w kwestiach formalnych związanych z likwidacją szkody — pomagamy w ocenie zakresu napraw i dokumentacji niezbędnej do zgłoszenia szkody do ubezpieczyciela."
+      },
+      "block4": {
+        "title": "BLS Service – rzetelność i indywidualne podejście",
+        "desc": "Jeśli Twój BMW uległ wypadkowi lub kolizji i potrzebujesz fachowego wsparcia naprawczego, zapraszamy do kontaktu z BLS Service. Gwarantujemy rzetelność, uczciwość i indywidualne podejście do każdego auta oraz klienta."
+      }
+    },
+    "Alarmy": {
+      "title": "Alarm Sowa ATS 02 – profesjonalny montaż w BMW",
+      "block1": {
+        "title": "Alarm Sowa ATS 02 – profesjonalny montaż w BMW",
+        "desc": "Oferujemy montaż i konfigurację alarmu Sowa ATS 02 do BMW. Instalujemy system SOWA ATS02 – zaawansowany alarm dedykowany do BMW, zapewniający najwyższy poziom ochrony przed kradzieżą i manipulacją OBD."
+      },
+      "block2": {
+        "title": "Dlaczego warto wybrać alarm Sowa ATS 02?",
+        "desc": "System ten wyróżnia nowoczesna technologia z użyciem tylko oryginalnych części BMW. Ochrona OBD: blokada portu, rejestracja prób odczytu i kasowania błędów; Autodiagnostyka: monitoring stanu 24/7, historia alarmów, powiadomienia SMS/GSM; Integracja z CAN-Bus: synchronizacja z immobilizerem, modułem CAS/BDC, bez konieczności dodatkowych przycisków; Lokalizacja GPS/GPRS: opcjonalny moduł śledzenia pojazdu, dostęp przez aplikację mobilną; Zarządzanie kluczami: programowanie i weryfikacja kluczy, rejestracja nowych i blokada skradzionych."
+      },
+      "block3": {
+        "title": "Montaż alarmu BMW – fachowa obsługa",
+        "desc": "Instalacja alarmu wymaga doświadczenia i znajomości elektroniki samochodowej. Nasz zespół specjalistów wykonuje profesjonalny montaż alarmów Sowa ATS 02 w BMW, dbając o dyskretne podłączenie i pełną integrację z systemem pojazdu. Używamy wyłącznie sprawdzonych rozwiązań i oryginalnych komponentów."
+      },
+      "block4": {
+        "title": "Alarm Sowa ATS 02 BMW – pełna ochrona Twojego auta",
+        "desc": "Oddając samochód w nasze ręce, zyskujesz pewność, że montaż zostanie wykonany szybko, bezpiecznie i zgodnie z najwyższymi standardami. Jeśli interesuje Cię instalacja alarmu Sowa ATS 02 do BMW, skontaktuj się z nami – zadbamy o bezpieczeństwo Twojego pojazdu."
+      }
+    },
+    "Wulkanizacja": {
+      "title": "Wymiana opon BMW – szybka i profesjonalna obsługa",
+      "block1": {
+        "title": "Wymiana opon BMW – szybka i profesjonalna obsługa",
+        "desc": "Oferujemy kompleksową usługę wymiana opon BMW, dzięki której Twój samochód jest zawsze gotowy na każdy sezon. Nasi specjaliści zapewniają precyzyjny montaż, wyważanie kół oraz kontrolę stanu technicznego opon i felg, co gwarantuje pełne bezpieczeństwo i komfort jazdy."
+      },
+      "block2": {
+        "title": "Sezonowa wymiana opon BMW",
+        "desc": "Zajmujemy się zarówno wymianą opon zimowych BMW na letnie, jak i odwrotnie. Używamy profesjonalnego sprzętu, który pozwala na szybkie i bezpieczne przeprowadzenie całej procedury. Dzięki temu masz pewność, że Twój samochód prowadzi się stabilnie i zużywa mniej paliwa."
+      },
+      "block3": {
+        "title": "Przechowywanie opon BMW – wygodne rozwiązanie",
+        "desc": "Dla naszych klientów oferujemy również usługę przechowywania opon BMW. Twoje ogumienie przechowywane jest w odpowiednich warunkach – suchych, chłodnych i bezpiecznych, co wydłuża jego żywotność i sprawia, że opony są gotowe do ponownego użycia w idealnym stanie."
+      },
+      "block4": {
+        "title": "Wymiana i przechowywanie opon BMW – dlaczego my?",
+        "desc": "Decydując się na nasz serwis, oszczędzasz czas i miejsce, a jednocześnie masz pewność, że Twoje opony są w dobrych rękach. Profesjonalna wymiana opon BMW z możliwością przechowywania to pełna wygoda, bezpieczeństwo i gwarancja jakości."
+      }
     }
   }
 }
