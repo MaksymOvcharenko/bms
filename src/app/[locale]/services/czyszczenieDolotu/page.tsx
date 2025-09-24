@@ -17,7 +17,7 @@ const ServiceSection = () => {
           <div className={styles.block1}>
             <h2>{t("title")}</h2>
             <Image
-              src="/images/uslugi/czyszczenieDolotu/sq/1.jpg"
+              src="/images/uslugi/dolot/sq/1.jpg"
               alt="Silnik"
               width={800}
               height={500}
@@ -31,7 +31,7 @@ const ServiceSection = () => {
           <div className={styles.block2}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/images/uslugi/czyszczenieDolotu/sq/2.jpg"
+                src="/images/uslugi/dolot/sq/2.jpg"
                 alt="Engine detail"
                 width={800}
                 height={500}
@@ -48,7 +48,7 @@ const ServiceSection = () => {
           <div className={styles.block3}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/images/uslugi/czyszczenieDolotu/sq/3.jpg"
+                src="/images/uslugi/dolot/sq/3.jpg"
                 alt="Suspension"
                 width={800}
                 height={500}
@@ -65,7 +65,7 @@ const ServiceSection = () => {
           <div className={styles.block4}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/images/uslugi/czyszczenieDolotu/sq/4.jpg"
+                src="/images/uslugi/dolot/sq/4.jpg"
                 alt="Oil change"
                 width={800}
                 height={500}
@@ -82,7 +82,7 @@ const ServiceSection = () => {
           <div className={styles.block5}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/images/uslugi/czyszczenieDolotu/sq/5.jpg"
+                src="/images/uslugi/dolot/sq/5.jpg"
                 alt="Exhaust"
                 width={800}
                 height={500}
