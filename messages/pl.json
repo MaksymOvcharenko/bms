@@ -71,6 +71,9 @@
     "crashRepair": "Naprawy powypadkowe",
     "alarms": "Alarmy",
     "vulcanization": "Wulkanizacja",
+    "czyszczenieDolotu": "Czyszczenie dolotu",
+    "rozrząd": "Rozrząd",
+    "Strojenie_auta_na_tor": "Strojenie auta na tor",
     "moreDetails": "Więcej szczegółów"
   },
   "Services": {
@@ -78,7 +81,7 @@
       "engine": {
         "title": "Serwis Mechaniczny – POSTAW NA DOŚWIADCZENIE I PROFESJONALIZM BLS Serwisu",
         "desc1": "Świadczymy kompleksowe usługi z zakresu mechaniki samochodowej.",
-        "desc2": "W BLS serwis mechaniczny to więcej niż rutynowe przeglądy i naprawy. To nasza pasja, w której łączymy wieloletnie doświadczenie z najnowocześniejszą technologią, aby zapewnić Twojemu samochodowi najwyższą jakość opieki. Nasz serwis jest wyposażony w nowoczesny sprzęt taki jak w ASO BMW/MINI/Rolls-Royce."
+        "desc2": "W BLS serwis łączymy wieloletnie doświadczenie z nowoczesną technologią, aby zapewnić Twojemu samochodowi (jak i BMW MOTORRAD) najwyższą jakość opieki. Nasz serwis jest wyposażony w nowoczesny sprzęt, taki jak w ASO BMW/MINI/Rolls-Royce. Oferujemy m.in. regenerację turbin oraz mycie DPF, aby poprawić sprawność i wydajność Twojego auta."
       },
       "engineDetail": {
         "title": "Serwis silnika – maksymalna moc i optymalna wydajność",
@@ -117,26 +120,26 @@
       "title": "Tuning",
       "block1": {
         "title": "Tuning BMW – profesjonalny serwis i personalizacja",
-        "desc": "Specjalizujemy się w usługach takich jak chip tuning BMW, modernizacja układu wydechowego, zawieszenia oraz montaż akcesoriów sportowych. Jeśli szukasz miejsca, gdzie wykonasz tuning BMW, nasz serwis zapewni Ci najwyższą jakość usług i indywidualne podejście."
+        "desc": "Specjalizujemy się w usługach takich jak chip tuning BMW, unlocking ECU, modernizacja układu wydechowego, zawieszenia, dopracowanie systemów dolotu (m.in. EVENTURY), downpipe, montaż akcesoriów sportowych oraz turbin hybrydowych."
       },
       "block2": {
         "title": "Chip tuning BMW – więcej mocy i lepsze osiągi",
-        "desc": "Dzięki nowoczesnemu sprzętu komputerowemu jesteśmy w stanie zoptymalizować pracę silnika, zwiększyć moc oraz moment obrotowy, przy jednoczesnym zachowaniu bezpieczeństwa i niezawodności. Każdy chip tuning BMW wykonujemy zgodnie z zaleceniami producenta i z wykorzystaniem sprawdzonych rozwiązań."
+        "desc": "Dzięki nowoczesnemu sprzętu komputerowemu jesteśmy w stanie zoptymalizować pracę silnika, zwiększyć moc oraz moment obrotowy, przy jednoczesnym zachowaniu bezpieczeństwa i niezawodności. Każdy chip tuning BMW wykonujemy zgodnie z zaleceniami producenta i z wykorzystaniem sprawdzonych rozwiązań"
       },
       "block3": {
-        "title": "Tuning wizualny i mechaniczny BMW",
-        "desc": "Poza zmianami w oprogramowaniu oferujemy również tuning optyczny BMW, obejmujący montaż aerodynamicznych pakietów, felg, sportowych układów hamulcowych i zawieszenia. Dzięki temu Twój samochód zyska nie tylko lepsze osiągi, ale i wyjątkowy wygląd, który wyróżni go na drodze."
+        "title": "xHP Flashtool",
+        "desc": "xHP Flashtool to pierwsze i jedyne na świecie kompletne rozwiązanie do tuningu Twojego BMW z ZF6HP, ZF8HP lub 7-biegową automatyczną skrzynią biegów DCT.xHP koncentruje się całkowicie na maksymalnym wykorzystaniu możliwości automatycznej skrzyni biegów i jest wiodącym na świecie rozwiązaniem dla pojazdów BMW. Oferujemy trzy poziomy dostrajania skrzyń biegów ZF, które mają własną specjalizację w zależności od zastosowania i osobistych preferencji."
       },
       "block4": {
-        "title": "Tuning BMW – indywidualne podejście",
-        "desc": "Każdy projekt realizujemy według potrzeb klienta, dbając o detale i pełną satysfakcję. Jeśli interesuje Cię tuning BMW – zarówno chip tuning, jak i tuning wizualny – skontaktuj się z nami. Zadbamy o to, aby Twoje BMW było jeszcze bardziej dynamiczne, efektowne i dopasowane do Twojego stylu jazdy."
+        "title": "Tuning BMW – chip tuning z bootmod",
+        "desc": "Specjalizujemy się w chip tuningu BMW z wykorzystaniem m.in bootmod, który umożliwia odblokowanie ECU i precyzyjne dostosowanie ustawień silnika. Dzięki temu zwiększamy moc, moment obrotowy i poprawiamy reakcję na gaz, zapewniając lepsze osiągi i dynamikę jazdy. Nasz tuning BMW jest bezpieczny, wykonany zgodnie z wymaganiami producenta, bez utraty gwarancji. Skontaktuj się z nami, aby dostosować BMW do swojego stylu jazdy!"
       }
     },
     "Kodowanie": {
       "title": "Kodowanie i programowanie BMW – nowoczesny serwis",
       "block1": {
-        "title": "Kodowanie i programowanie BMW – nowoczesny serwis",
-        "desc": "Oferujemy profesjonalne kodowanie BMW oraz kompleksowe programowanie modułów i sterowników. Dzięki tej usłudze możliwe jest odblokowanie ukrytych funkcji, personalizacja ustawień oraz dostosowanie auta do indywidualnych potrzeb kierowcy."
+        "title": "Oferujemy profesjonalne kodowanie BMW oraz kompleksowe programowanie modułów i sterowników. ",
+        "desc": "Dzięki tej usłudze możliwe jest odblokowanie ukrytych funkcji (m.in MGU, CarPlay, odczytywanie znaków drogowych i wiele innych)."
       },
       "block2": {
         "title": "Programowanie BMW – pełna funkcjonalność i bezpieczeństwo",
@@ -154,12 +157,12 @@
     "Conversion": {
       "title": "Konwersja BMW z USA na EU – profesjonalny serwis",
       "block1": {
-        "title": "Konwersja BMW z USA na EU – profesjonalny serwis",
-        "desc": "Specjalizujemy się w kompleksowej usłudze konwersja BMW USA – EU, która obejmuje pełne dostosowanie samochodów sprowadzonych z Ameryki do europejskich standardów. Dzięki naszej wiedzy i doświadczeniu Twój BMW będzie w pełni zgodny z wymogami technicznymi i prawnymi obowiązującymi w Unii Europejskiej."
+        "title": "Specjalizujemy się w kompleksowej usłudze konwersja BMW USA – EU, która obejmuje pełne dostosowanie samochodów sprowadzonych z Ameryki do europejskich standardów.",
+        "desc": "Dzięki naszej wiedzy i doświadczeniu Twój BMW będzie w pełni zgodny z wymogami technicznymi i prawnymi obowiązującymi w Unii Europejskiej."
       },
       "block2": {
         "title": "Przeróbka świateł i elektroniki BMW z USA",
-        "desc": "Najczęstszym etapem jest zmiana oświetlenia BMW USA na EU, czyli dostosowanie reflektorów, świateł tylnych i kierunkowskazów do europejskich norm. Oferujemy również programowanie i kodowanie BMW USA – EU, które pozwala na poprawne działanie systemów multimedialnych, nawigacji i liczników oraz radia."
+        "desc": "Najczęstszym etapem jest zmiana oświetlenia BMW USA na EU, czyli dostosowanie reflektorów, świateł tylnych, kierunkowskazów oraz tylnych lamp przeciwmgielnych do europejskich norm. Oferujemy również programowanie i kodowanie BMW USA – EU, które pozwala na poprawne działanie systemów multimedialnych, nawigacji i liczników oraz radia."
       },
       "block3": {
         "title": "Dostosowanie licznika i systemów BMW",
@@ -268,16 +271,16 @@
     "Alarmy": {
       "title": "Alarm Sowa ATS 02 – profesjonalny montaż w BMW",
       "block1": {
-        "title": "Alarm Sowa ATS 02 – profesjonalny montaż w BMW",
-        "desc": "Oferujemy montaż i konfigurację alarmu Sowa ATS 02 do BMW. Instalujemy system SOWA ATS02 – zaawansowany alarm dedykowany do BMW, zapewniający najwyższy poziom ochrony przed kradzieżą i manipulacją OBD."
+        "title": "Oferujemy montaż i konfigurację alarmu Sowa ATS 02 do BMW.",
+        "desc": "Instalujemy system SOWA ATS02 – zaawansowany alarm dedykowany do BMW, zapewniający najwyższy poziom ochrony przed kradzieżą i manipulacją OBD."
       },
       "block2": {
         "title": "Dlaczego warto wybrać alarm Sowa ATS 02?",
-        "desc": "System ten wyróżnia nowoczesna technologia z użyciem tylko oryginalnych części BMW. Ochrona OBD: blokada portu, rejestracja prób odczytu i kasowania błędów; Autodiagnostyka: monitoring stanu 24/7, historia alarmów, powiadomienia SMS/GSM; Integracja z CAN-Bus: synchronizacja z immobilizerem, modułem CAS/BDC, bez konieczności dodatkowych przycisków; Lokalizacja GPS/GPRS: opcjonalny moduł śledzenia pojazdu, dostęp przez aplikację mobilną; Zarządzanie kluczami: programowanie i weryfikacja kluczy, rejestracja nowych i blokada skradzionych."
+        "desc": "System ten wyróżnia nowoczesną technologią z użyciem tylko oryginalnych części BMW. Ochrona OBD: blokada portu, rejestracja prób odczytu i kasowania błędów; Autodiagnostyka: monitoring stanu 24/7, historia alarmów, powiadomienia SMS/GSM; Integracja z CAN-Bus: synchronizacja z immobilizerem, modułem CAS/BDC, bez konieczności dodatkowych przycisków; Lokalizacja GPS/GPRS: opcjonalny moduł śledzenia pojazdu, dostęp przez aplikację mobilną; Zarządzanie kluczami: programowanie i weryfikacja kluczy, rejestracja nowych i blokada skradzionych."
       },
       "block3": {
-        "title": "Montaż alarmu BMW – fachowa obsługa",
-        "desc": "Instalacja alarmu wymaga doświadczenia i znajomości elektroniki samochodowej. Nasz zespół specjalistów wykonuje profesjonalny montaż alarmów Sowa ATS 02 w BMW, dbając o dyskretne podłączenie i pełną integrację z systemem pojazdu. Używamy wyłącznie sprawdzonych rozwiązań i oryginalnych komponentów."
+        "title": "Montaż imobilazera SOWA SSI 01 BMW",
+        "desc": "Sowa SSI 01 to zaawansowany immobilizer, który chroni pojazd przed kradzieżą, blokując uruchomienie silnika bez wprowadzenia unikalnego PIN-u. Jest zintegrowany z elektroniką samochodu, zapewniając pełną kompatybilność z systemami BMW. Instalacja jest bezinwazyjna, nie wpływa na gwarancję pojazdu i nie wymaga cięcia oryginalnych przewodów. Sowa SSI 01 to niezawodne rozwiązanie, które zwiększa bezpieczeństwo pojazdu i stanowi skuteczną ochronę przed kradzieżą."
       },
       "block4": {
         "title": "Alarm Sowa ATS 02 BMW – pełna ochrona Twojego auta",
@@ -287,8 +290,8 @@
     "Wulkanizacja": {
       "title": "Wymiana opon BMW – szybka i profesjonalna obsługa",
       "block1": {
-        "title": "Wymiana opon BMW – szybka i profesjonalna obsługa",
-        "desc": "Oferujemy kompleksową usługę wymiana opon BMW, dzięki której Twój samochód jest zawsze gotowy na każdy sezon. Nasi specjaliści zapewniają precyzyjny montaż, wyważanie kół oraz kontrolę stanu technicznego opon i felg, co gwarantuje pełne bezpieczeństwo i komfort jazdy."
+        "title": "Oferujemy kompleksową usługę wymiana opon BMW, pomóc przy zakupie opon, opony na tor (slick i semi-slick).",
+        "desc": "Nasi specjaliści zapewniają precyzyjny montaż, wyważanie kół oraz kontrolę stanu technicznego opon i felg, co gwarantuje pełne bezpieczeństwo i komfort jazdy."
       },
       "block2": {
         "title": "Sezonowa wymiana opon BMW",
@@ -300,7 +303,64 @@
       },
       "block4": {
         "title": "Wymiana i przechowywanie opon BMW – dlaczego my?",
-        "desc": "Decydując się na nasz serwis, oszczędzasz czas i miejsce, a jednocześnie masz pewność, że Twoje opony są w dobrych rękach. Profesjonalna wymiana opon BMW z możliwością przechowywania to pełna wygoda, bezpieczeństwo i gwarancja jakości."
+        "desc": "Decydując się na nasz serwis, oszczędzasz czas i miejsce, a jednocześnie masz pewność, że Twoje opony są w dobrych rękach. Profesjonalna wymiana opon BMW z możliwością przechowywania to pełna wygoda,bezpieczeństwo i gwarancja jakości."
+      }
+    },
+    "CzyszczenieDolotu": {
+      "title": "Czyszczenie kanałów dolotowych łupinami orzecha włoskiego BMW N47 / B47 / N57 / B57 ",
+      "block1": {
+        "title": "Metoda czyszczenia jest w 100% bezpieczna dla silnika",
+        "desc": "Сzyszczenie całego układu dolotowego przynajmniej co 80 - 100 000 km, to kluczowa procedura serwisowa w samochodach BMW.Jeśli układ EGR ulega awarii, proces zanieczyszczenia może wystąpić znacznie wcześniej. "
+      },
+      "block2": {
+        "title": "Oferujemy profesjonalne czyszczenie kolektora ssącego oraz kanałów dolotowych głowicy BMW. ",
+        "desc": "Nasze usługi wykonujemy za pomocą rekomendowanego przez BMW urządzenia, które umożliwia skuteczne i bezpieczne oczyszczanie elementów silnika. Do czyszczenia używamy łupiny orzecha, które są bezpieczne dla jednostki napędowej."
+      },
+      "block3": {
+        "title": "Dlaczego warto?",
+        "desc": "Zanieczyszczenia w kolektorze ssącym i kanałach dolotowych mogą znacząco wpłynąć na pracę silnika. Regularne czyszczenie przywraca prawidłowy przepływ powietrza i paliwa, co przekłada się na lepszą dynamikę, moc oraz zmniejszenie zużycia paliwa"
+      },
+      "block4": {
+        "title": "W trakcie przeprowadzania prac oceniamy również ogólny stan podzespołów silnika.",
+        "desc": "Ten problem występuje przeważnie w silnikach diesla (N47 / B47 / N57 / B57) także i w benzynowych z wtryskiem bezpośrednim."
+      }
+    },
+    "Rozrząd": {
+      "title": "Wymiana rozrządu w BMW – kluczowa procedura serwisowa",
+      "block1": {
+        "title": "Wymiana rozrządu w BMW – kiedy warto zacząć kontrolować?",
+        "desc": "W BMW wymiana rozrządu jest zalecana po 150 000 km, jednak kontrolować stan rozrządu warto już po 100 000 km. Regularna weryfikacja stanu rozrządu pozwala wykryć ewentualne problemy na wczesnym etapie i zapobiec kosztownym awariom silnika. "
+      },
+      "block2": {
+        "title": "Dlaczego warto regularnie sprawdzać stan rozrządu w BMW?",
+        "desc": "Regularne sprawdzanie stanu rozrządu jest kluczowe dla uniknięcia poważnych uszkodzeń silnika w każdym modelu BMW. Zbagatelizowanie problemów z rozrządem może prowadzić do kosztownych napraw i całkowitej awarii silnika. Bez względu na to, czy masz silnik N47, N57, B47, B57, N55, N20, B48, B58, regularna kontrola rozrządu jest niezbędna do zapewnienia prawidłowej pracy jednostki napędowej."
+      },
+      "block3": {
+        "title": "Jakie silniki BMW wymagają kontroli rozrządu?",
+        "desc": "N47 i N57 – silniki Diesla, które wymagają regularnej kontroli, aby uniknąć problemów z rozrządem, szczególnie w starszych modelach. B47 i B57 – nowoczesne silniki Diesla, które oferują lepszą wydajność paliwową i mniejsze emisje spalin, ale wymagają utrzymania w dobrym stanie. N55 i N20 – silniki benzynowe o doskonałej dynamice, które także wymagają staranności w utrzymaniu rozrządu, by uniknąć uszkodzeń. B48 i B58 – nowoczesne silniki BMW, które oferują wysoką wydajność i osiągi, ale wymagają regularnej kontroli rozrządu."
+      },
+      "block4": {
+        "title": "Kiedy wymienić rozrząd w BMW?",
+        "desc": "Po 100 000 km – rozpocznij kontrolę stanu rozrządu, aby uniknąć kosztownych napraw w przyszłości. \n Po 150 000 km – wymiana rozrządu zgodnie z zaleceniami producenta.Zauważenie problemów z dźwiękami, mocą czy rozruchem silnika – natychmiastowa kontrola i diagnoza rozrządu."
+      }
+    },
+    "tor": {
+      "title": "Przygotowanie auta do jazdy na torze – co oferujemy?",
+      "block1": {
+        "title": "Przygotowanie auta do wyścigów",
+        "desc": "W BLS Service Kraków oferujemy kompleksowe przygotowanie auta do wyścigów, które obejmuje wszystkie niezbędne modyfikacje, aby zapewnić pojazdowi maksymalną wydajność na torze wyścigowym. Nasi specjaliści pomogą dostosować Twój samochód do warunków torowych, zapewniając mu wysoką dynamikę, stabilność i bezpieczeństwo na każdym torze."
+      },
+      "block2": {
+        "title": "Podstawowe modyfikacje, które wykonujemy",
+        "desc": "Silnik – Wykonujemy chip tuning, instalujemy turbo lub kompresor, a także modyfikujemy układy wlotowe oraz wydechowe. Zawieszenie – Wymieniamy standardowe zawieszenie na sportowe amortyzatory i sprężyny, które poprawiają trzymanie drogi i stabilność w zakrętach, co jest niezbędne na torze. Układ hamulcowy – Instalujemy sportowe tarcze hamulcowe i klocki hamulcowe, które zapewniają szybkie i skuteczne hamowanie przy dużych prędkościach. Opony – Dobieramy opony wyścigowe odpowiednie do warunków torowych, takie jak slicki lub semi-slicki, które zapewniają maksymalną przyczepność i stabilność."
+      },
+      "block3": {
+        "title": "Modyfikacje aerodynamiczne w samochodach wyścigowych",
+        "desc": "Spoilery i dyfuzory – Instalujemy spoiler i dyfuzory, które poprawiają aerodynamikę auta, zwiększając przyczepność i stabilność przy wysokich prędkościach na torze.Obniżenie zawieszenia – Obniżamy samochód, co poprawia jego aerodynamikę, zmniejsza opór powietrza i zapewnia lepszą stabilność w zakrętach. Lekkie materiały – Używamy lekkich materiałów (włókno węglowe), co zmniejsza wagę pojazdu i poprawia jego dynamikę oraz przyspieszenie."
+      },
+      "block4": {
+        "title": "Bezpieczeństwo na torze – kluczowe zmiany w samochodzie",
+        "desc": "Rollbar i klatka bezpieczeństwa – Instalujemy klatkę bezpieczeństwa oraz rollbar, które zapewniają ochronę kierowcy w przypadku przewrócenia się pojazdu lub wypadku. Fotel wyścigowy i pasy bezpieczeństwa – Montujemy fotel wyścigowy oraz pasy bezpieczeństwa 6-punktowe, które zapewniają kierowcy pełną stabilność podczas intensywnych manewrów. System gaśniczy – Instalujemy system gaśniczy, który zapewnia bezpieczeństwo w przypadku pożaru samochodu."
       }
     }
   }

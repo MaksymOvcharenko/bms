@@ -22,7 +22,10 @@ const services: Service[] = [
   { slug: "carEquipment", translationKey: "carEquipment", imageSrc: "/images/services/Doposazenie.jpg" },
   { slug: "crashRepair", translationKey: "crashRepair", imageSrc: "/images/services/powypadkowe.jpg" },
   { slug: "alarms", translationKey: "alarms", imageSrc: "/images/services/alarm.jpg" },
-  { slug: "vulcanization", translationKey: "vulcanization", imageSrc: "/images/services/wulkanizacja.JPG" }
+  { slug: "vulcanization", translationKey: "vulcanization", imageSrc: "/images/services/wulkanizacja.JPG" },
+  { slug: "czyszczenieDolotu", translationKey: "czyszczenieDolotu", imageSrc: "/images/services/czyszczenieDolotu.jpg" },
+  { slug: "rozrzad", translationKey: "rozrząd", imageSrc: "/images/services/rozrząd.jpg" },
+  { slug: "tor", translationKey: "Strojenie_auta_na_tor", imageSrc: "/images/services/Strojenie_auta_na_tor.jpg" }
 ];
 
 export default function ServicesCard() {
