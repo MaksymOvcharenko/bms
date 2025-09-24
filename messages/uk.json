@@ -58,6 +58,7 @@
         "services": "Послуги"
     },
     "ServicesCard": {
+        "title": "Послуги",
         "mechanicalService": "Сервіс механічний",
         "electricalService": "Електричні послуги",
         "tuning": "Тюнінг",

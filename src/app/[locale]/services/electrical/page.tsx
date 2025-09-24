@@ -23,9 +23,9 @@ const ServiceSection = () => {
               alt="Silnik"
               width={800}
               height={500}
-            /> <GradientBar />
+            /> 
             <p>{t("intro")}</p>
-            
+            <GradientBar />
           </div>
     
           {/* 2 */}
