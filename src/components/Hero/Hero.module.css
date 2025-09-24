@@ -127,6 +127,10 @@
   .video {
     object-fit: cover;
   }
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+  }
 }
 
 /* Великі планшети і маленькі ноутбуки (від 768px) */
@@ -142,6 +146,10 @@
     width: 100%;
     gap: 30%;
     height: 50vh;
+  }
+  .title {
+    font-size: 28px;
+    font-weight: 700;
   }
 }
 

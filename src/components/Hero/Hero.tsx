@@ -34,7 +34,10 @@ export const Hero = () => {
             </video>
       <div className={s.body}>
         <div>
-        <h1 className={s.title}>{t("title")}</h1>
+           {/* <h1 className={s.title}>{t("title")}</h1> */}
+          <h1 className={s.title}>{t("title1")}</h1>
+          <h1 className={s.title}>{t("title2")}</h1>
+          <h1 className={s.title}>{t("title3")}</h1>
         {/* <p className={s.descr}>{t("description")}</p> */}
         </div>
         <div className={s.btn}>
