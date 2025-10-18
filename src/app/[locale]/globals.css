@@ -242,7 +242,9 @@ h3 {
 }
 .swiper-pagination-bullet {
   background: var(--color-primary) !important;
+ 
 }
+
 .reveal-section {
   opacity: 0;
   transform: translateY(40px);
@@ -273,7 +275,10 @@ h3 {
   }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 768px) {
+  .swiper-pagination{
+  bottom: -40px !important;
+}
 }
 /* Великі планшети і маленькі ноутбуки (від 768px) */
 @media (min-width: 768px) {

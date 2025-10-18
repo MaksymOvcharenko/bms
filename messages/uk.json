@@ -53,10 +53,14 @@
         "readMore": "Читати більше"
     },
     "Hero": {
-        "title": "Автосервіс BLS Service",
-        "description": "Ремонт і технічне обслуговування автомобілів марок BMW, Mini та Rolls-Royce",
-        "services": "Послуги"
-    },
+  "title": "Ремонт і технічний сервіс автомобілів BMW, Mini та Rolls-Royce",
+  "title1": "Ремонт і технічний сервіс ",
+  "title2": "автомобілів ",
+  "title3": "BMW, Mini та Rolls-Royce",
+  "description": "Ремонт і технічний сервіс автомобілів BMW, Mini та Rolls-Royce",
+  "services": "Послуги"
+}
+,
     "ServicesCard": {
         "title": "Послуги",
         "mechanicalService": "Сервіс механічний",
