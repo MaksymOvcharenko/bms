@@ -276,9 +276,13 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  .swiper-pagination{
-  bottom: -40px !important;
-}
+  .swiper-pagination {
+    position: absolute !important;
+    left: 10% !important;
+    transform: translateX(-50%);
+
+    width: 80% !important;
+  }
 }
 /* Великі планшети і маленькі ноутбуки (від 768px) */
 @media (min-width: 768px) {
