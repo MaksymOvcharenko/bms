@@ -1,0 +1,35 @@
+.swiper {
+  width: 370px;
+  height: 360px;
+  margin: 0 auto;
+}
+.slide {
+  display: flex;
+  height: auto;
+}
+.cardWrap {
+  /* padding: 10px 16px; */
+ /* padding: 32px; */
+ padding: 40px;
+  width: 100%;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .swiper {
+    width: 768px;
+    height: 360px;
+  }
+  .cardWrap {
+    padding: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .swiper {
+    width: 1280px;
+    height: 360px;
+  }
+  .cardWrap {
+    padding: 40px;
+  }
+}
