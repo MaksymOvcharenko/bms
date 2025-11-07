@@ -1,0 +1,29 @@
+"use client";
+
+import { useEffect } from "react";
+import { usePathname, useSearchParams } from "next/navigation";
+
+declare global {
+  interface Window {
+    dataLayer: Record<string, any>[];
+  }
+}
+
+export function GtmPageView() {
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    if (!pathname) return;
+
+    const url = pathname + (searchParams?.toString() ? `?${searchParams}` : "");
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "pageview",
+      page_path: url,
+    });
+  }, [pathname, searchParams]);
+
+  return null;
+}
