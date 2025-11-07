@@ -10,6 +10,7 @@ import Footer from "@/components/Footer/Footer";
 import { ToastContainer } from "react-toastify";
 import Script from "next/script";
 import { GtmPageView } from "@/components/GtmPageView/GtmPageView";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -61,7 +62,9 @@ const GTM_ID = "GTM-MTN9TZKH";
           />
         </noscript>
         <NextIntlClientProvider locale={locale} messages={messages}>
-                  <GtmPageView />
+                 <Suspense fallback={null}>
+          <GtmPageView />
+        </Suspense>
           <div className="flex flex-col min-h-screen max-w-4xl mx-auto">
             <Header />
             <div className="flex-grow mt-20">{children}</div>

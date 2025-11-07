@@ -1,4 +1,4 @@
-"use client";
+
 
 import { client } from "@/lib/contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
