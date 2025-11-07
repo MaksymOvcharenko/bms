@@ -52,8 +52,9 @@ import { useTranslations } from "next-intl";
 import FollowSocLink from "@/components/FollowSocLink/FollowSocLink";
 
 const localeMap: Record<string, string> = {
-  uk: "uk-UA",
+  
   pl: "pl-PL",
+  uk: "uk-UA",
 };
 
 const POSTS_PER_PAGE = 3;
