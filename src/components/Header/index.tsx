@@ -13,6 +13,7 @@ import { IoIosMenu } from "react-icons/io";
 import { RiMenuLine } from 'react-icons/ri';
 import MobileMenu from '../MobMenu/MobMenu';
 import SocialLinks from '../SocialLinks/SocialLinks';
+import { trackPhoneClick } from '@/lib/gtmEvents';
 export default function Header() {
   const t = useTranslations('Navigation');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,7 +51,7 @@ export default function Header() {
           <LocalSwitcher />
         </nav>
         <div className={styles.socLink}><SocialLinks />
-           <a href="tel:+4857777223" className={styles.socLinkTel}>+48 577772223</a></div>
+           <a href="tel:+4857777223" className={styles.socLinkTel}  onClick={() => trackPhoneClick("+4857777223", "header")}>+48 577772223</a></div>
         <button
           className={styles.burger}
           onClick={toggleMenu}
