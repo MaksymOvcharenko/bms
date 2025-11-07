@@ -4,6 +4,7 @@ import ServiceBtn from "../ServiceBtn/ServiceBtn";
 import s from "./Hero.module.css";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { useTranslations } from "next-intl";
+import { trackVisitClick } from "@/lib/gtmEvents";
 
 export const Hero = () => {
   const t = useTranslations("Hero");
@@ -41,7 +42,7 @@ export const Hero = () => {
         {/* <p className={s.descr}>{t("description")}</p> */}
         </div>
         <div className={s.btn}>
-          <Link href="#service" className={s.btnLink}>
+          <Link href="#service" className={s.btnLink} onClick={() => trackVisitClick("hero_visit")}>
             <TfiMenuAlt size={20} />
             <p>{t("services")}</p>
           </Link>
