@@ -42,7 +42,7 @@ export const Hero = () => {
         {/* <p className={s.descr}>{t("description")}</p> */}
         </div>
         <div className={s.btn}>
-          <Link href="#service" className={s.btnLink} onClick={() => trackVisitClick("hero_visit")}>
+          <Link href="#service" className={s.btnLink} >
             <TfiMenuAlt size={20} />
             <p>{t("services")}</p>
           </Link>
