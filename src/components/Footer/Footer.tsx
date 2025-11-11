@@ -5,6 +5,7 @@ import Image from 'next/image';
 import logo from '../../../public/images/bnslogo.svg';
 import { NavBar } from '../NavBar';
 import SocialLinks from '../SocialLinks/SocialLinks';
+import ScrollToTop from '../ScrollToTop/ScrollToTop';
 export default function Footer() {
   const t = useTranslations('Footer');
 
@@ -12,6 +13,7 @@ export default function Footer() {
       <div className={styles.footer}>
           <NavBar />
           <SocialLinks/>
+            
          <Image 
         src={logo} 
         alt="BNS service" 

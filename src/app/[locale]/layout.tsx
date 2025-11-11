@@ -11,6 +11,8 @@ import { ToastContainer } from "react-toastify";
 import Script from "next/script";
 import { GtmPageView } from "@/components/GtmPageView/GtmPageView";
 import { Suspense } from "react";
+import ScrollToTopButton from "@/components/ScrollToTopButton/ScrollToTopButton";
+import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,6 +53,11 @@ const GTM_ID = "GTM-MTN9TZKH";
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Rounded+Mplus+1c:wght@300;400;500;700&family=Inter:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&display=swap"
         />
+        <title>BLS - service</title>
+         <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={inter.className}>
          <noscript>
@@ -67,11 +74,17 @@ const GTM_ID = "GTM-MTN9TZKH";
         </Suspense>
           <div className="flex flex-col min-h-screen max-w-4xl mx-auto">
             <Header />
-            <div className="flex-grow mt-20">{children}</div>
+            <div className="flex-grow mt-20">{children}
+               
+            </div>
+             
             <Footer />
+            <ScrollToTop />
             <ToastContainer position="bottom-right" autoClose={2000} theme="dark" />
           </div>
+      
         </NextIntlClientProvider>
+        
       </body>
     </html>
   );
