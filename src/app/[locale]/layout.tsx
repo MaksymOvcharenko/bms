@@ -69,7 +69,7 @@ const GTM_ID = "GTM-MTN9TZKH";
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Rounded+Mplus+1c:wght@300;400;500;700&family=Inter:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&display=swap"
         />
-        <title>BLS - service</title>
+        <title>BLS Service - Niezależny serwis BMW/MINI w Krakowie</title>
          <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
