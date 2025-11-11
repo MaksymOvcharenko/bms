@@ -38,6 +38,22 @@ const GTM_ID = "GTM-MTN9TZKH";
   return (
     <html lang={locale}>
       <head>
+         {/* ✅ hreflang для Google */}
+        <link
+          rel="alternate"
+          href="https://www.blsservice.pl/"
+          hrefLang="pl"
+        />
+        <link
+          rel="alternate"
+          href="https://www.blsservice.pl/uk/"
+          hrefLang="uk"
+        />
+        <link
+          rel="alternate"
+          href="https://www.blsservice.pl/"
+          hrefLang="x-default"
+        />
          {/* GTM script */}
         <Script
           id="gtm-base"
