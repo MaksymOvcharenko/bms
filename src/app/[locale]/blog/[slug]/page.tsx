@@ -1,7 +1,6 @@
 
 
 import { client } from "@/lib/contentful";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { Document } from "@contentful/rich-text-types";
 import { Entry } from "contentful";
 import Link from "next/link";
@@ -11,6 +10,7 @@ import FollowSocLink from "@/components/FollowSocLink/FollowSocLink";
 import ContactInfoSection from "@/components/ContactInfoSection/ContactInfoSection";
 import ShareButton from "@/components/ShareButton/ShareButton";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
+import ContentfulRichText from "@/components/ContentfulRichText/ContentfulRichText";
 
 const localeMap: Record<string, string> = {
   uk: "uk-UA",
@@ -103,9 +103,7 @@ export default async function BlogPostPage({
             />
           )}
     
-          <div className={styles.content}>
-            {documentToReactComponents(content)}
-          </div>
+          <ContentfulRichText document={content} />
     
           <div className={styles.navButtons}>
             {prevPost && (
