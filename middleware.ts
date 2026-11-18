@@ -1,13 +1,15 @@
 import createMiddleware from 'next-intl/middleware';
+import {defaultLocale, locales} from './src/config/i18n';
  
 export default createMiddleware({
   // A list of all locales that are supported
-  locales: ['pl', 'uk'],
+  locales,
  
   // Used when no locale matches
-  defaultLocale: 'pl'
+  defaultLocale,
+  localePrefix: 'as-needed'
 });
  
 export const config = {
-  matcher: ['/((?!_next|.*\\..*).*)'], // не чіпає _next, static, API тощо
+  matcher: ['/((?!api|_next|.*\\..*).*)'],
 };

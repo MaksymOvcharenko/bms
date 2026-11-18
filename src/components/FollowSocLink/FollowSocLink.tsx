@@ -3,6 +3,7 @@ import s from './FollowSocLink.module.css'
 import Image from 'next/image'
 import car from '../../../public/images/mobileSoc.png' // Імпортуємо логотип
 import { useTranslations } from 'next-intl'
+import { contact } from '@/config/contact';
 import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa'
 const FollowSocLink = () => {
     const t = useTranslations('FollowSocLink');
@@ -16,7 +17,7 @@ const FollowSocLink = () => {
                 <ul className={s.list}>
                     <li className={s.listItem}><a href="https://m.me/BLSserviceKrakow" target="_blank" rel="noopener noreferrer" className={s.link}><FaFacebookF size={16}/>Facebook</a></li>
                     <li className={s.listItem}><a href="https://ig.me/m/bls_service_krakow" target="_blank" rel="noopener noreferrer" className={s.link}><FaInstagram size={20} />Instagram</a></li>
-                    <li className={s.listItem}><a href="https://wa.me/48577772223" target="_blank" rel="noopener noreferrer" className={s.link}><FaWhatsapp size={16}/>WhatsApp</a></li>
+                    <li className={s.listItem}><a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className={s.link}><FaWhatsapp size={16}/>WhatsApp</a></li>
                 </ul>
               </div>
         </div>
@@ -25,6 +26,3 @@ const FollowSocLink = () => {
 }
 
 export default FollowSocLink
-
-      
-      

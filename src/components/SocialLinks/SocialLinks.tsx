@@ -2,14 +2,15 @@
 
 import styles from './SocialLinks.module.css';
 import { FaFacebookF, FaInstagram, FaTiktok, FaPhoneAlt } from 'react-icons/fa';
+import { contact } from '@/config/contact';
 
 export default function SocialLinks() {
   return (
     <div className={styles.socials}>
-      <a href="https://www.facebook.com/BLSserviceKrakow" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-      <a href="https://www.instagram.com/bls_service_krakow/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-      <a href="https://www.tiktok.com/@bls_service_krakow" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
-      <a href="tel:+4857777223"><FaPhoneAlt /></a>
+      <a aria-label="Facebook" href={contact.facebook} target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+      <a aria-label="Instagram" href={contact.instagram} target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+      <a aria-label="TikTok" href={contact.tiktok} target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
+      <a aria-label="Phone" href={contact.phoneHref}><FaPhoneAlt /></a>
       
     </div>
     

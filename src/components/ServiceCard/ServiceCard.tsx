@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import styles from "./ServiceCard.module.css";
+import { Locale, localizePath } from "@/config/i18n";
 
 type Service = {
   slug: string;
@@ -30,7 +31,7 @@ const services: Service[] = [
 
 export default function ServicesCard() {
   const t = useTranslations("ServicesCard");
-  const locale = useLocale();
+  const locale = useLocale() as Locale;
 
   return (
     <section className={styles.section}>
@@ -39,7 +40,7 @@ export default function ServicesCard() {
           {services.map(({ slug, translationKey, imageSrc }) => (
             <Link
               key={slug}
-              href={`/${locale}/services/${slug}`}
+              href={localizePath(`/services/${slug}`, locale)}
               className={styles.card}
               style={{ backgroundImage: `url(${imageSrc})` }}
             >

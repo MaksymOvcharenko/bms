@@ -9,9 +9,11 @@ import ServicesCard from "@/components/ServiceCard/ServiceCard";
 import ServicesBlock from "@/components/ServicesBlock/ServicesBlock";
 import ServiceVisit from "@/components/ServiceVisit/ServiceVisit";
 import ShortBlog from "@/components/ShortBlog/ShortBlog";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 
 export default function HomePage({ params }: { params: { locale: string } }) {
+  unstable_setRequestLocale(params.locale);
   return (
     <>
      

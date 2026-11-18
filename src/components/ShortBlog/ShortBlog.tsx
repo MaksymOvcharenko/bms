@@ -9,11 +9,8 @@ import { IoIosArrowForward } from "react-icons/io";
 
 import { client } from "@/lib/contentful";
 import { TfiMenuAlt } from "react-icons/tfi";
-
-const localeMap: Record<string, string> = {
-  uk: "uk-UA",
-  pl: "pl-PL",
-};
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { contentfulLocaleMap, Locale, localizePath } from "@/config/i18n";
 
 const POSTS_PER_PAGE = 3;
 
@@ -24,28 +21,19 @@ export default async function ShortBlog({
   params: { locale: string };
   searchParams?: { page?: string };
 }) {
+  const locale = params.locale as Locale;
+  unstable_setRequestLocale(locale);
   const currentPage = Number(searchParams?.page) || 1;
   const skip = (currentPage - 1) * POSTS_PER_PAGE;
+  const t = await getTranslations({ locale, namespace: "Blog" });
 
   const { items, total } = await client.getEntries({
     content_type: "blsBlog",
-    locale: localeMap[params.locale],
+    locale: contentfulLocaleMap[locale],
+    order: "-fields.publishedDate" as any,
     skip,
     limit: POSTS_PER_PAGE,
   });
-  const sortedItems = items.sort((a, b) => {
-    const dateA = a.fields.publishedDate ? new Date(String(a.fields.publishedDate)).getTime() : 0;
-    const dateB = b.fields.publishedDate ? new Date(String(b.fields.publishedDate)).getTime() : 0;
-    return dateB - dateA; // від нової до старої
-  });
-  
-  
-  const headingText =
-  params.locale === "uk"
-    ? "Експертні знання та натхнення для автолюбителів"
-    : "Ekspercka wiedza i inspiracje motoryzacyjne";
-
-const readMoreText = params.locale === "uk" ? "Читати далі" : "Czytaj więcej";
   const totalPages = Math.ceil(total / POSTS_PER_PAGE);
 
   return (
@@ -53,11 +41,11 @@ const readMoreText = params.locale === "uk" ? "Читати далі" : "Czytaj 
         <div className={styles.section}>
             <div className={styles.container}>
               <h1 className={styles.heading}>
-              {headingText}
+              {t("blogSectionTitle")}
               </h1>
         
               <ul className={styles.list}>
-                {sortedItems.map((post: any) => (
+                {items.map((post: any) => (
                     <li key={post.sys.id} className={styles.item}>
                         {post.fields.coverImage && (
                       <Image
@@ -69,19 +57,19 @@ const readMoreText = params.locale === "uk" ? "Читати далі" : "Czytaj 
                       />
                     )}
                     <div className={styles.text}>
-                        <Link href={`/${params.locale}/blog/${post.fields.slug}`}>
+                        <Link href={localizePath(`/blog/${post.fields.slug}`, locale)}>
                           <h2 className={styles.title}>{post.fields.title}</h2>
                             </Link>
                            
                             <div className={styles.descriptions}>{documentToReactComponents(post.fields.description as Document)}</div>
                         {post.fields.publishedDate && (
                           <p className={styles.date}>
-                          {new Date(post.fields.publishedDate).toLocaleDateString("uk-UA")}
+                          {new Date(post.fields.publishedDate).toLocaleDateString(locale)}
                                 </p>
                                 
                             )}
-                            <Link href={`/${params.locale}/blog/${post.fields.slug}`} className={styles.link}>
-                            <p>{readMoreText} </p><IoIosArrowForward size={16} />
+                            <Link href={localizePath(`/blog/${post.fields.slug}`, locale)} className={styles.link}>
+                            <p>{t("readMore")} </p><IoIosArrowForward size={16} />
                             </Link>
                     </div >
                     
@@ -93,10 +81,10 @@ const readMoreText = params.locale === "uk" ? "Читати далі" : "Czytaj 
                 
                   <Link
                   
-                    href={`/${params.locale}/blog`}
+                    href={localizePath("/blog", locale)}
                     className={styles.pageLink}
                   >
-                   <TfiMenuAlt /> {params.locale === "pl" ? "Więcej artykułów" : "Всі статті"}
+                   <TfiMenuAlt /> {t("allArticles")}
                   </Link>
                
               </div>

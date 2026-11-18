@@ -13,6 +13,8 @@ import { GtmPageView } from "@/components/GtmPageView/GtmPageView";
 import { Suspense } from "react";
 import ScrollToTopButton from "@/components/ScrollToTopButton/ScrollToTopButton";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
+import { isLocale, Locale, locales, localizePath } from "@/config/i18n";
+import type { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,14 +23,50 @@ interface RootLayoutProps {
   params: { locale: string };
 }
 
+const metadataByLocale: Record<Locale, { title: string; description: string }> = {
+  pl: {
+    title: "BLS Service — niezależny serwis BMW, MINI i Rolls-Royce w Krakowie",
+    description: "Profesjonalna diagnostyka, naprawa i serwis BMW, MINI oraz Rolls-Royce w Krakowie.",
+  },
+  uk: {
+    title: "BLS Service — незалежний сервіс BMW, MINI та Rolls-Royce у Кракові",
+    description: "Професійна діагностика, ремонт і обслуговування BMW, MINI та Rolls-Royce у Кракові.",
+  },
+  en: {
+    title: "BLS Service — independent BMW, MINI and Rolls-Royce service in Kraków",
+    description: "Professional diagnostics, repair and servicing for BMW, MINI and Rolls-Royce vehicles in Kraków.",
+  },
+};
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+export function generateMetadata({ params: { locale } }: RootLayoutProps): Metadata {
+  if (!isLocale(locale)) return {};
+  const siteUrl = "https://www.blsservice.pl";
+
+  return {
+    ...metadataByLocale[locale],
+    alternates: {
+      canonical: `${siteUrl}${localizePath("/", locale)}`,
+      languages: {
+        pl: `${siteUrl}/`,
+        uk: `${siteUrl}/uk`,
+        en: `${siteUrl}/en`,
+        "x-default": `${siteUrl}/`,
+      },
+    },
+  };
+}
+
 export default async function RootLayout({
   children,
   params: { locale },
   
 }: RootLayoutProps) {
     unstable_setRequestLocale(locale); // ← ДОДАЙ СЮДИ
-  const availableLocales = ["en", "uk", "pl"];
-  if (!availableLocales.includes(locale)) {
+  if (!isLocale(locale)) {
     notFound();
   }
 
@@ -38,22 +76,6 @@ const GTM_ID = "GTM-MTN9TZKH";
   return (
     <html lang={locale}>
       <head>
-         {/* ✅ hreflang для Google */}
-        <link
-          rel="alternate"
-          href="https://www.blsservice.pl/"
-          hrefLang="pl"
-        />
-        <link
-          rel="alternate"
-          href="https://www.blsservice.pl/uk/"
-          hrefLang="uk"
-        />
-        <link
-          rel="alternate"
-          href="https://www.blsservice.pl/"
-          hrefLang="x-default"
-        />
          {/* GTM script */}
         <Script
           id="gtm-base"
@@ -65,11 +87,6 @@ const GTM_ID = "GTM-MTN9TZKH";
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','${GTM_ID}');
         `}</Script>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Rounded+Mplus+1c:wght@300;400;500;700&family=Inter:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&display=swap"
-        />
-        <title>BLS Service - Niezależny serwis BMW/MINI w Krakowie</title>
          <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

@@ -4,28 +4,50 @@
 import { useState } from 'react';
 import { useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
-import Flag from 'react-world-flags';
 import { ChevronDown } from 'lucide-react';
 import styles from "./local-switcher.module.css"
+import { Locale, locales, localizePath } from '@/config/i18n';
 
 export default function LocaleSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const localeActive = useLocale();
 
-  const languages = [
-    { code: 'uk', label: 'UA', flag: 'UA' },
-  
-    { code: 'pl', label: 'PL', flag: 'PL' },
+  const languages: Array<{code: Locale; label: string}> = [
+    { code: 'pl', label: 'PL' },
+    { code: 'uk', label: 'UA' },
+    { code: 'en', label: 'EN' },
   ];
 
   // const handleLanguageChange = (locale: string) => {
   //   setIsOpen(false);
   //   router.replace(`/${locale}`);
   // };
-const handleLanguageChange = (locale: string) => {
+const handleLanguageChange = async (locale: string) => {
   setIsOpen(false);
-  router.replace(`/${locale}${window.location.pathname.replace(/^\/[a-z]{2}/, '')}`);
+  const localePattern = new RegExp(`^/(${locales.join('|')})(?=/|$)`);
+  let pathWithoutLocale = window.location.pathname.replace(localePattern, '') || '/';
+  const blogPostMatch = pathWithoutLocale.match(/^\/blog\/([^/]+)$/);
+
+  if (blogPostMatch) {
+    try {
+      const query = new URLSearchParams({
+        sourceLocale: localeActive,
+        targetLocale: locale,
+        slug: decodeURIComponent(blogPostMatch[1]),
+      });
+      const response = await fetch(`/api/localized-blog-path?${query}`);
+      if (response.ok) {
+        const data = await response.json();
+        pathWithoutLocale = `/blog/${data.slug}`;
+      }
+    } catch {
+      // Keep the current slug if Contentful is temporarily unavailable.
+    }
+  }
+
+  const localizedPath = localizePath(pathWithoutLocale, locale as Locale);
+  router.replace(`${localizedPath}${window.location.search}${window.location.hash}`);
 };
 
   return (
@@ -37,14 +59,14 @@ const handleLanguageChange = (locale: string) => {
         
         {/* <div className={styles.flag}><Flag code={languages.find((lang) => lang.code === localeActive)?.flag || 'UA'} width={52} height={52} /></div> */}
         <div className={styles.lang}>
-          <span >{languages.find((lang) => lang.code === localeActive)?.label || 'UA'}</span>
+          <span>{languages.find((lang) => lang.code === localeActive)?.label || 'PL'}</span>
           <ChevronDown size={24} />
         </div>
       </button>
 
       {isOpen && (
         <div className={styles.modal}>
-          {languages.map(({ code, label, flag }) => (
+          {languages.map(({ code, label }) => (
             <button
               key={code}
               onClick={() => handleLanguageChange(code)}

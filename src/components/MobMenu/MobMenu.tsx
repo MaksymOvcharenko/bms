@@ -37,11 +37,12 @@
 'use client';
 
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import styles from './MobMenu.module.css';
 import { IoClose } from 'react-icons/io5';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import LocalSwitcher from '../local-switcher';
+import { Locale, localizePath } from '@/config/i18n';
 
 interface Props {
   isOpen: boolean;
@@ -50,6 +51,7 @@ interface Props {
 
 export default function MobileMenu({ isOpen, onClose }: Props) {
   const t = useTranslations('Navigation');
+  const locale = useLocale() as Locale;
 
   return (
     <div className={`${styles.menu} ${isOpen ? styles.open : styles.closed}`}>
@@ -61,13 +63,13 @@ export default function MobileMenu({ isOpen, onClose }: Props) {
 
       <nav className={styles.nav}>
       <div className={styles.switcher}><LocalSwitcher /></div>
-        <Link href="/" onClick={onClose}><span>{t('home')}</span></Link>
-        <Link href="/#soclink" onClick={onClose}><span>{t('about')}</span></Link>
-        <Link href="/#service" onClick={onClose}><span>{t('services')}</span></Link>
-        <Link href="/#gallery" onClick={onClose}><span>{t('gallery')}</span></Link>
-        <Link href="/#reviews" onClick={onClose}><span>{t('reviews')}</span></Link>
-        <Link href="/#contact" onClick={onClose}><span>{t('contact')}</span></Link>
-        <Link href="/blog" onClick={onClose}><span>{t('blog')}</span></Link>
+        <Link href={localizePath("/", locale)} onClick={onClose}><span>{t('home')}</span></Link>
+        <Link href={`${localizePath("/", locale)}#soclink`} onClick={onClose}><span>{t('about')}</span></Link>
+        <Link href={`${localizePath("/", locale)}#service`} onClick={onClose}><span>{t('services')}</span></Link>
+        <Link href={`${localizePath("/", locale)}#gallery`} onClick={onClose}><span>{t('gallery')}</span></Link>
+        <Link href={`${localizePath("/", locale)}#reviews`} onClick={onClose}><span>{t('reviews')}</span></Link>
+        <Link href={`${localizePath("/", locale)}#contact`} onClick={onClose}><span>{t('contact')}</span></Link>
+        <Link href={localizePath("/blog", locale)} onClick={onClose}><span>{t('blog')}</span></Link>
       </nav>
  
       <div className={styles.socLink}><SocialLinks /></div>

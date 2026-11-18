@@ -8,20 +8,16 @@ import Image from "next/image";
 import ContactInfoSection from "@/components/ContactInfoSection/ContactInfoSection";
 import SocialLinks from "@/components/SocialLinks/SocialLinks";
 import FollowSocLink from "@/components/FollowSocLink/FollowSocLink";
-const localeMap: Record<string, string> = {
-  uk: "uk-UA",
-  pl: "pl-PL",
-  
-};
+import { notFound } from "next/navigation";
+import { contentfulLocaleMap, Locale, locales } from "@/config/i18n";
 
 export async function generateStaticParams() {
-  const locales = Object.keys(localeMap);
   const allParams: { slug: string; locale: string }[] = [];
 
   for (const locale of locales) {
     const { items } = await client.getEntries({
       content_type: "blsServices",
-      locale: localeMap[locale],
+      locale: contentfulLocaleMap[locale],
       select: ["fields.slug"],
     });
 
@@ -45,11 +41,11 @@ export default async function ServicePage({
   const { items } = await client.getEntries({
     content_type: "blsServices",
     "fields.slug": params.slug,
-    locale: localeMap[params.locale],
+    locale: contentfulLocaleMap[params.locale as Locale],
   });
 
   const service: any = items[0];
-  if (!service) return <h1>Послугу не знайдено</h1>;
+  if (!service) notFound();
 
   return (
     <>

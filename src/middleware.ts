@@ -12,11 +12,12 @@
 //   matcher: ['/((?!_next|.*\\..*).*)'], // не чіпає _next, static, API тощо
 // };
 import createMiddleware from 'next-intl/middleware';
+import {defaultLocale, locales} from './config/i18n';
 
 export default createMiddleware({
-  locales: ['pl', 'uk'],   // тільки ті, що реально є
-  defaultLocale: 'pl',     // польська — головна
-  localePrefix: 'as-needed' // ✅ без /pl для дефолтної мови, з /uk для української
+  locales,
+  defaultLocale,
+  localePrefix: 'as-needed'
 });
 
 export const config = {

@@ -23,7 +23,8 @@
     "title": "Jak nas znaleźć",
     "we_wait": "Czekamy na Ciebie!",
     "mon_fri": "Pon.–Pt.",
-    "sat": "Sob."
+    "sat": "Sob.",
+    "map_title": "Mapa dojazdu do BLS Service"
   },
   "FollowSocLink": {
     "title": "Bądź na bieżąco z naszym serwisem",
@@ -50,7 +51,18 @@
   },
   "Blog": {
     "blogSectionTitle": "Ekspercka wiedza i inspiracje motoryzacyjne",
-    "readMore": "Czytaj więcej"
+    "readMore": "Czytaj więcej",
+    "allArticles": "Więcej artykułów",
+    "previous": "Poprzednia",
+    "next": "Następna",
+    "back": "Powrót do bloga",
+    "previousPost": "Poprzedni artykuł",
+    "nextPost": "Następny artykuł"
+  },
+  "Share": {
+    "share": "Udostępnij post",
+    "copy": "Skopiuj link",
+    "copied": "Link skopiowany"
   },
   "Hero": {
     "title": "Naprawa i serwis techniczny samochodów marki BMW, Mini i Rolls-Royce",

@@ -1,24 +1,382 @@
 {
   "IndexPage": {
-    "title": "Home Page",
-    "description": "Test English Language"
+    "title": "Home",
+    "description": "BLS Service in Kraków"
   },
   "NotFoundPage": {
-    "title": "Page Not Found",
-    "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist. Return to the home page to continue browsing."
   },
   "Navigation": {
     "home": "Home",
+    "about": "About us",
     "services": "Services",
-    "tariffs": "Tariffs",
-    "calculator": "Calculator",
-    "business": "Business",
-    "about": "About Us",
-    "contacts": "Contacts",
-    "faq": "FAQ",
-    "promotions": "Promotions"
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "blog": "Blog"
   },
   "Footer": {
-    "copyright": "© 2024 Footer in English."
+    "copyright": "© 2026 BLS SERVICE"
+  },
+  "Contact": {
+    "title": "How to find us",
+    "we_wait": "We look forward to seeing you!",
+    "mon_fri": "Mon–Fri",
+    "sat": "Sat",
+    "map_title": "Directions to BLS Service"
+  },
+  "FollowSocLink": {
+    "title": "Stay up to date with our service",
+    "descr": "Follow us on social media for news, service advice, behind-the-scenes updates and photos from the BLS workshop.",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "tiktok": "TikTok"
+  },
+  "ServiceBtn": {
+    "btn": "Book a service"
+  },
+  "ServiceVisit": {
+    "title": "Meet BLS — your partner in car care",
+    "desc1": "Since 2012, we have provided expert care for BMW, MINI and Rolls-Royce vehicles, from diagnostics to engine rebuilds, using quality parts and providing a warranty.",
+    "desc2": "Our experienced team, in-house parts stock and manufacturer-compliant procedures keep every repair efficient and reliable.",
+    "desc3": "We service BMW, MINI and Rolls-Royce vehicles in accordance with manufacturer requirements."
+  },
+  "Reviews": {
+    "title": "Customer reviews"
+  },
+  "Gallery": {
+    "title": "Gallery",
+    "desc1": "See more projects and behind-the-scenes photos on our social media."
+  },
+  "Blog": {
+    "blogSectionTitle": "Expert automotive knowledge and inspiration",
+    "readMore": "Read more",
+    "allArticles": "All articles",
+    "previous": "Previous",
+    "next": "Next",
+    "back": "Back to the blog",
+    "previousPost": "Previous article",
+    "nextPost": "Next article"
+  },
+  "Share": {
+    "share": "Share this article",
+    "copy": "Copy link",
+    "copied": "Link copied"
+  },
+  "Hero": {
+    "title": "Repair and technical service for BMW, MINI and Rolls-Royce",
+    "title1": "Repair and technical service",
+    "title2": "for vehicles by",
+    "title3": "BMW, MINI and Rolls-Royce",
+    "description": "Repair and technical service for BMW, MINI and Rolls-Royce",
+    "services": "Services"
+  },
+  "ServicesCard": {
+    "title": "Services",
+    "mechanicalService": "Mechanical service",
+    "electricalService": "Electrical services",
+    "tuning": "Tuning",
+    "coding": "Coding and programming",
+    "conversion": "USA to EU conversion",
+    "inspection": "Pre-purchase inspection",
+    "diagnostics": "Comprehensive vehicle diagnostics",
+    "update": "Control unit software updates",
+    "carEquipment": "Vehicle retrofitting",
+    "crashRepair": "Post-accident repairs",
+    "alarms": "Alarm systems",
+    "vulcanization": "Tyre service",
+    "czyszczenieDolotu": "Intake cleaning",
+    "rozrząd": "Timing system service",
+    "Strojenie_auta_na_tor": "Track car setup",
+    "moreDetails": "More details"
+  },
+  "Services": {
+    "Mechanical": {
+      "engine": {
+        "title": "Mechanical service — BLS experience and professionalism",
+        "desc1": "We provide comprehensive automotive mechanical services.",
+        "desc2": "We combine years of experience with modern BMW-compatible equipment. Our services include diagnostics, repairs, turbocharger regeneration and DPF cleaning."
+      },
+      "engineDetail": {
+        "title": "Engine service — power and optimum performance",
+        "text": "From routine maintenance to complex repairs, precise diagnostics help identify faults early. Timing-system work is performed with particular care."
+      },
+      "suspension": {
+        "title": "Suspension — comfort and stability",
+        "text": "We diagnose and repair suspension systems, including dampers, springs and chassis components, to restore safe and predictable handling."
+      },
+      "oil": {
+        "title": "Oil, filter and fluid replacement",
+        "text": "Regular oil and fluid changes are essential for engine life. We use suitable products and follow manufacturer procedures."
+      },
+      "exhaust": {
+        "title": "Exhaust and silencer service",
+        "text": "We repair complete exhaust systems, including DPF replacement and cleaning as well as centre and rear silencers."
+      }
+    },
+    "Electrical": {
+      "title": "Automotive electrical services",
+      "intro": "We diagnose and repair electrical systems, electronics and wiring in current and older BMW models using professional ISTA tools and quality measuring equipment.",
+      "engine": {
+        "title": "BMW auto electrician — expert diagnostics",
+        "desc": "We repair alternators, starters, comfort modules, lighting, central locking and engine control units using proven parts and procedures."
+      },
+      "suspension": {
+        "title": "BMW electrical-system repair",
+        "desc": "Our specialists service older E and F series as well as current G and U series with a focus on safety and reliability."
+      },
+      "service": {
+        "title": "Electrical service you can rely on",
+        "desc": "Every repair starts with computer diagnostics and circuit testing, followed by calibration, a road test and clear documentation."
+      }
+    },
+    "Tuning": {
+      "title": "BMW tuning and performance upgrades",
+      "block1": {
+        "title": "Professional BMW tuning and personalisation",
+        "desc": "We provide carefully selected performance upgrades, calibration and hardware solutions tailored to the vehicle and driver."
+      },
+      "block2": {
+        "title": "Safe chip tuning for more power and torque",
+        "desc": "We provide carefully selected performance upgrades, calibration and hardware solutions tailored to the vehicle and driver."
+      },
+      "block3": {
+        "title": "xHP transmission tuning",
+        "desc": "We provide carefully selected performance upgrades, calibration and hardware solutions tailored to the vehicle and driver."
+      },
+      "block4": {
+        "title": "ECU tuning with bootmod",
+        "desc": "We provide carefully selected performance upgrades, calibration and hardware solutions tailored to the vehicle and driver."
+      }
+    },
+    "Kodowanie": {
+      "title": "BMW coding and programming",
+      "block1": {
+        "title": "Professional feature coding",
+        "desc": "We activate supported functions, update modules and configure vehicle systems with BMW-compatible diagnostic tools."
+      },
+      "block2": {
+        "title": "BMW module programming",
+        "desc": "We activate supported functions, update modules and configure vehicle systems with BMW-compatible diagnostic tools."
+      },
+      "block3": {
+        "title": "Individual comfort and multimedia settings",
+        "desc": "We activate supported functions, update modules and configure vehicle systems with BMW-compatible diagnostic tools."
+      },
+      "block4": {
+        "title": "Manufacturer-compatible coding service",
+        "desc": "We activate supported functions, update modules and configure vehicle systems with BMW-compatible diagnostic tools."
+      }
+    },
+    "Conversion": {
+      "title": "BMW USA to EU conversion",
+      "block1": {
+        "title": "Complete European adaptation",
+        "desc": "We adapt imported vehicles to European technical, lighting, unit, radio, navigation and legal requirements."
+      },
+      "block2": {
+        "title": "Lighting and electronics conversion",
+        "desc": "We adapt imported vehicles to European technical, lighting, unit, radio, navigation and legal requirements."
+      },
+      "block3": {
+        "title": "Instrument cluster and system adaptation",
+        "desc": "We adapt imported vehicles to European technical, lighting, unit, radio, navigation and legal requirements."
+      },
+      "block4": {
+        "title": "Compliant and convenient European operation",
+        "desc": "We adapt imported vehicles to European technical, lighting, unit, radio, navigation and legal requirements."
+      }
+    },
+    "Przedzakupowy": {
+      "title": "BMW pre-purchase inspection",
+      "block1": {
+        "title": "Confidence before you buy",
+        "desc": "We inspect key mechanical and electronic systems, service history and potential repair costs before purchase."
+      },
+      "block2": {
+        "title": "Detailed computer and mechanical diagnostics",
+        "desc": "We inspect key mechanical and electronic systems, service history and potential repair costs before purchase."
+      },
+      "block3": {
+        "title": "Inspection of vehicles from the USA and Europe",
+        "desc": "We inspect key mechanical and electronic systems, service history and potential repair costs before purchase."
+      },
+      "block4": {
+        "title": "An informed buying decision",
+        "desc": "We inspect key mechanical and electronic systems, service history and potential repair costs before purchase."
+      }
+    },
+    "Diagnostics": {
+      "title": "Comprehensive BMW diagnostics",
+      "block1": {
+        "title": "Full control of vehicle condition",
+        "desc": "Original diagnostic tools and careful physical checks help us find faults early and avoid unnecessary repairs."
+      },
+      "block2": {
+        "title": "Professional computer diagnostics",
+        "desc": "Original diagnostic tools and careful physical checks help us find faults early and avoid unnecessary repairs."
+      },
+      "block3": {
+        "title": "Mechanical and electrical checks",
+        "desc": "Original diagnostic tools and careful physical checks help us find faults early and avoid unnecessary repairs."
+      },
+      "block4": {
+        "title": "Experience you can rely on",
+        "desc": "Original diagnostic tools and careful physical checks help us find faults early and avoid unnecessary repairs."
+      }
+    },
+    "Sterownikow": {
+      "title": "BMW control unit software updates",
+      "block1": {
+        "title": "Modern BMW software service",
+        "desc": "Manufacturer-compatible software updates improve reliability, compatibility, functionality and system response."
+      },
+      "block2": {
+        "title": "Benefits of current control-unit software",
+        "desc": "Manufacturer-compatible software updates improve reliability, compatibility, functionality and system response."
+      },
+      "block3": {
+        "title": "Safe professional programming",
+        "desc": "Manufacturer-compatible software updates improve reliability, compatibility, functionality and system response."
+      },
+      "block4": {
+        "title": "Reliable and stable system operation",
+        "desc": "Manufacturer-compatible software updates improve reliability, compatibility, functionality and system response."
+      }
+    },
+    "Doposazenie": {
+      "title": "BMW retrofitting and upgrades",
+      "block1": {
+        "title": "More comfort and modern features",
+        "desc": "We install and code cameras, sensors, lighting, multimedia, CarPlay and other equipment for factory-like operation."
+      },
+      "block2": {
+        "title": "Popular BMW retrofit options",
+        "desc": "We install and code cameras, sensors, lighting, multimedia, CarPlay and other equipment for factory-like operation."
+      },
+      "block3": {
+        "title": "Professional installation and coding",
+        "desc": "We install and code cameras, sensors, lighting, multimedia, CarPlay and other equipment for factory-like operation."
+      },
+      "block4": {
+        "title": "Factory-like integration",
+        "desc": "We install and code cameras, sensors, lighting, multimedia, CarPlay and other equipment for factory-like operation."
+      }
+    },
+    "Powypadkowe": {
+      "title": "BMW post-accident repair",
+      "block1": {
+        "title": "Comprehensive accident-repair service",
+        "desc": "We identify visible and hidden collision damage and restore affected mechanical, electronic and safety systems."
+      },
+      "block2": {
+        "title": "Accurate damage assessment",
+        "desc": "We identify visible and hidden collision damage and restore affected mechanical, electronic and safety systems."
+      },
+      "block3": {
+        "title": "Mechanical and electronic repairs",
+        "desc": "We identify visible and hidden collision damage and restore affected mechanical, electronic and safety systems."
+      },
+      "block4": {
+        "title": "A safe return to the road",
+        "desc": "We identify visible and hidden collision damage and restore affected mechanical, electronic and safety systems."
+      }
+    },
+    "Alarmy": {
+      "title": "BMW alarm and anti-theft systems",
+      "block1": {
+        "title": "Professional vehicle security",
+        "desc": "We integrate modern alarms and immobilisers with BMW electronics without cutting original wiring."
+      },
+      "block2": {
+        "title": "Sowa ATS 02 alarm system",
+        "desc": "We integrate modern alarms and immobilisers with BMW electronics without cutting original wiring."
+      },
+      "block3": {
+        "title": "Sowa SSI 01 immobiliser",
+        "desc": "We integrate modern alarms and immobilisers with BMW electronics without cutting original wiring."
+      },
+      "block4": {
+        "title": "Careful, non-invasive installation",
+        "desc": "We integrate modern alarms and immobilisers with BMW electronics without cutting original wiring."
+      }
+    },
+    "Wulkanizacja": {
+      "title": "BMW tyre replacement and storage",
+      "block1": {
+        "title": "Complete BMW tyre service",
+        "desc": "We fit and balance road or track tyres, inspect wheels and offer storage in suitable conditions."
+      },
+      "block2": {
+        "title": "Seasonal tyre replacement",
+        "desc": "We fit and balance road or track tyres, inspect wheels and offer storage in suitable conditions."
+      },
+      "block3": {
+        "title": "Secure tyre storage",
+        "desc": "We fit and balance road or track tyres, inspect wheels and offer storage in suitable conditions."
+      },
+      "block4": {
+        "title": "Professional fitting and convenience",
+        "desc": "We fit and balance road or track tyres, inspect wheels and offer storage in suitable conditions."
+      }
+    },
+    "CzyszczenieDolotu": {
+      "title": "BMW intake cleaning with walnut blasting",
+      "block1": {
+        "title": "A method that is safe for the engine",
+        "desc": "Walnut-shell cleaning safely removes intake deposits to restore airflow, response and efficiency."
+      },
+      "block2": {
+        "title": "Professional manifold and intake-port cleaning",
+        "desc": "Walnut-shell cleaning safely removes intake deposits to restore airflow, response and efficiency."
+      },
+      "block3": {
+        "title": "Restored airflow and performance",
+        "desc": "Walnut-shell cleaning safely removes intake deposits to restore airflow, response and efficiency."
+      },
+      "block4": {
+        "title": "Additional component inspection",
+        "desc": "Walnut-shell cleaning safely removes intake deposits to restore airflow, response and efficiency."
+      }
+    },
+    "Rozrząd": {
+      "title": "BMW timing system replacement",
+      "block1": {
+        "title": "When to inspect the timing system",
+        "desc": "We inspect and replace timing components according to mileage, engine condition and manufacturer guidance."
+      },
+      "block2": {
+        "title": "Why regular checks matter",
+        "desc": "We inspect and replace timing components according to mileage, engine condition and manufacturer guidance."
+      },
+      "block3": {
+        "title": "BMW petrol and diesel engine coverage",
+        "desc": "We inspect and replace timing components according to mileage, engine condition and manufacturer guidance."
+      },
+      "block4": {
+        "title": "When replacement is required",
+        "desc": "We inspect and replace timing components according to mileage, engine condition and manufacturer guidance."
+      }
+    },
+    "tor": {
+      "title": "Track car preparation and setup",
+      "block1": {
+        "title": "Preparing a car for racing",
+        "desc": "We prepare engines, suspension, brakes, tyres, aerodynamics and safety equipment for reliable track use."
+      },
+      "block2": {
+        "title": "Engine, suspension, brake and tyre upgrades",
+        "desc": "We prepare engines, suspension, brakes, tyres, aerodynamics and safety equipment for reliable track use."
+      },
+      "block3": {
+        "title": "Aerodynamic modifications",
+        "desc": "We prepare engines, suspension, brakes, tyres, aerodynamics and safety equipment for reliable track use."
+      },
+      "block4": {
+        "title": "Essential track safety equipment",
+        "desc": "We prepare engines, suspension, brakes, tyres, aerodynamics and safety equipment for reliable track use."
+      }
+    }
   }
 }

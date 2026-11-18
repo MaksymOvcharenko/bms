@@ -48,14 +48,9 @@ import styles from "./blog.module.css";
 import { Document } from "@contentful/rich-text-types";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { IoIosArrowForward } from "react-icons/io";
-import { useTranslations } from "next-intl";
 import FollowSocLink from "@/components/FollowSocLink/FollowSocLink";
-
-const localeMap: Record<string, string> = {
-  
-  pl: "pl-PL",
-  uk: "uk-UA",
-};
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { contentfulLocaleMap, Locale, localizePath } from "@/config/i18n";
 
 const POSTS_PER_PAGE = 3;
 
@@ -66,28 +61,20 @@ export default async function BlogPage({
   params: { locale: string };
   searchParams?: { page?: string };
 }) {
-  const currentPage = Number(searchParams?.page) || 1;
+  const locale = params.locale as Locale;
+  unstable_setRequestLocale(locale);
+  const requestedPage = Number(searchParams?.page);
+  const currentPage = Number.isInteger(requestedPage) && requestedPage > 0 ? requestedPage : 1;
   const skip = (currentPage - 1) * POSTS_PER_PAGE;
+  const t = await getTranslations({ locale, namespace: "Blog" });
 
   const { items, total } = await client.getEntries({
     content_type: "blsBlog",
-    locale: localeMap[params.locale],
+    locale: contentfulLocaleMap[locale],
+    order: "-fields.publishedDate" as any,
     skip,
     limit: POSTS_PER_PAGE,
   });
-  const sortedItems = items.sort((a, b) => {
-    const dateA = a.fields.publishedDate ? new Date(String(a.fields.publishedDate)).getTime() : 0;
-    const dateB = b.fields.publishedDate ? new Date(String(b.fields.publishedDate)).getTime() : 0;
-    return dateB - dateA; // від нової до старої
-  });
-  
-  
-  const headingText =
-  params.locale === "uk"
-    ? "Експертні знання та натхнення для автолюбителів"
-    : "Ekspercka wiedza i inspiracje motoryzacyjne";
-
-const readMoreText = params.locale === "uk" ? "Читати далі" : "Czytaj więcej";
   const totalPages = Math.ceil(total / POSTS_PER_PAGE);
 
   return (
@@ -95,11 +82,11 @@ const readMoreText = params.locale === "uk" ? "Читати далі" : "Czytaj 
         <div className={styles.section}>
             <div className={styles.container}>
               <h1 className={styles.heading}>
-              {headingText}
+              {t("blogSectionTitle")}
               </h1>
         
               <ul className={styles.list}>
-                {sortedItems.map((post: any) => (
+                {items.map((post: any) => (
                     <li key={post.sys.id} className={styles.item}>
                         {post.fields.coverImage && (
                       <Image
@@ -111,19 +98,19 @@ const readMoreText = params.locale === "uk" ? "Читати далі" : "Czytaj 
                       />
                     )}
                     <div className={styles.text}>
-                        <Link href={`/${params.locale}/blog/${post.fields.slug}`}>
+                        <Link href={localizePath(`/blog/${post.fields.slug}`, locale)}>
                           <h2 className={styles.title}>{post.fields.title}</h2>
                             </Link>
                            
                             <div className={styles.descriptions}>{documentToReactComponents(post.fields.description as Document)}</div>
                         {post.fields.publishedDate && (
                           <p className={styles.date}>
-                          {new Date(post.fields.publishedDate).toLocaleDateString("uk-UA")}
+                          {new Date(post.fields.publishedDate).toLocaleDateString(locale)}
                                 </p>
                                 
                             )}
-                            <Link href={`/${params.locale}/blog/${post.fields.slug}`} className={styles.link}>
-                            <p>{readMoreText} </p><IoIosArrowForward size={16} />
+                            <Link href={localizePath(`/blog/${post.fields.slug}`, locale)} className={styles.link}>
+                            <p>{t("readMore")} </p><IoIosArrowForward size={16} />
                             </Link>
                     </div >
                     
@@ -147,10 +134,10 @@ const readMoreText = params.locale === "uk" ? "Читати далі" : "Czytaj 
                   <div className={styles.pagination}>
       {currentPage > 1 && (
         <Link
-          href={`/${params.locale}/blog?page=${currentPage - 1}`}
+          href={`${localizePath("/blog", locale)}?page=${currentPage - 1}`}
           className={styles.pageNav}
         >
-          &lt; {params.locale === "pl" ? "Poprzednia" : "Попередня"}
+          &lt; {t("previous")}
         </Link>
       )}
     
@@ -177,7 +164,7 @@ const readMoreText = params.locale === "uk" ? "Читати далі" : "Czytaj 
           ) : (
             <Link
               key={page}
-              href={`/${params.locale}/blog?page=${page}`}
+              href={`${localizePath("/blog", locale)}?page=${page}`}
               className={`${styles.pageLink} ${
                 page === currentPage ? styles.active : ""
               }`}
@@ -189,10 +176,10 @@ const readMoreText = params.locale === "uk" ? "Читати далі" : "Czytaj 
     
       {currentPage < totalPages && (
         <Link
-          href={`/${params.locale}/blog?page=${currentPage + 1}`}
+          href={`${localizePath("/blog", locale)}?page=${currentPage + 1}`}
           className={styles.pageNav}
         >
-          {params.locale === "pl" ? "Następna" : "Наступна"} &gt;
+          {t("next")} &gt;
         </Link>
       )}
     </div>

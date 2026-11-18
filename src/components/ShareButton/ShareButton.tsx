@@ -87,32 +87,17 @@ import { IoIosShareAlt } from "react-icons/io";
 import { PiLinkSimpleBold } from "react-icons/pi";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useTranslations } from "next-intl";
 
-interface ShareButtonProps {
-  locale: "uk" | "pl";
-}
-
-export default function ShareButton({ locale }: ShareButtonProps) {
+export default function ShareButton() {
   const [open, setOpen] = useState(false);
+  const t = useTranslations("Share");
   const url = typeof window !== "undefined" ? window.location.href : "";
-
-  const labels = {
-    uk: {
-      share: "Поділитись постом",
-      copy: "Скопіювати лінк",
-      copied: "Посилання скопійовано",
-    },
-    pl: {
-      share: "Udostępnij post",
-      copy: "Skopiuj link",
-      copied: "Link skopiowany",
-    },
-  };
 
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(url);
-      toast.success(labels[locale].copied);
+      toast.success(t("copied"));
     } catch (err) {
       console.error("Failed to copy: ", err);
     } finally {
@@ -134,13 +119,13 @@ export default function ShareButton({ locale }: ShareButtonProps) {
     <div className={styles.wrapper}>
       <button className={styles.trigger} onClick={() => setOpen(!open)}>
         <IoIosShareAlt size={20} />
-        <span>{labels[locale].share}</span>
+        <span>{t("share")}</span>
       </button>
 
       {open && (
         <div className={styles.modal} role="dialog" aria-label="Share Modal window">
           <button className={styles.item} onClick={handleCopy}>
-            <PiLinkSimpleBold /> {labels[locale].copy}
+            <PiLinkSimpleBold /> {t("copy")}
           </button>
           <a
             href={`https://www.facebook.com/sharer/sharer.php?u=${url}`}

@@ -2,7 +2,6 @@
 
 import { client } from "@/lib/contentful";
 import { Document } from "@contentful/rich-text-types";
-import { Entry } from "contentful";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./styles.module.css";
@@ -11,21 +10,17 @@ import ContactInfoSection from "@/components/ContactInfoSection/ContactInfoSecti
 import ShareButton from "@/components/ShareButton/ShareButton";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 import ContentfulRichText from "@/components/ContentfulRichText/ContentfulRichText";
-
-const localeMap: Record<string, string> = {
-  uk: "uk-UA",
-  pl: "pl-PL",
-};
+import { notFound } from "next/navigation";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { contentfulLocaleMap, Locale, locales, localizePath } from "@/config/i18n";
 
 export async function generateStaticParams() {
-  const locales = Object.keys(localeMap);
-
   const allParams: { slug: string; locale: string }[] = [];
 
   for (const locale of locales) {
     const { items } = await client.getEntries({
       content_type: "blsBlog",
-      locale: localeMap[locale],
+      locale: contentfulLocaleMap[locale],
       select: ["fields.slug"],
     });
 
@@ -46,11 +41,13 @@ export default async function BlogPostPage({
 }: {
   params: { locale: string; slug: string };
 }) {
-  const locale = localeMap[params.locale];
+  const locale = params.locale as Locale;
+  unstable_setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "Blog" });
 
   const { items: allPosts } = await client.getEntries({
     content_type: "blsBlog",
-    locale,
+    locale: contentfulLocaleMap[locale],
     order: "-fields.publishedDate" as any, // каст до any, інакше TS буде скаржитися
   });
 
@@ -62,7 +59,7 @@ export default async function BlogPostPage({
   const prevPost = allPosts[currentIndex + 1]; // бо в Contentful order: -date (тобто найновіший перший)
   const nextPost = allPosts[currentIndex - 1];
 
-  if (!currentPost) return <h1>Пост не знайдено</h1>;
+  if (!currentPost) notFound();
 
   const { title, content, coverImage, publishedDate } =
     currentPost.fields as {
@@ -82,14 +79,14 @@ export default async function BlogPostPage({
       <div className={styles.section}>
         <div className={styles.wrapper}>
           <div className={styles.back}>
-            <Link href={`/${params.locale}/blog`}>{params.locale === "uk" ? "← Назад до блогу" : "← Powrót do bloga"}</Link>
+            <Link href={localizePath("/blog", locale)}>← {t("back")}</Link>
           </div>
     
           <h1 className={styles.title}>{title}</h1>
     
           {publishedDate && (
             <p className={styles.date}>
-              {new Date(publishedDate).toLocaleDateString(params.locale)}
+              {new Date(publishedDate).toLocaleDateString(locale)}
             </p>
           )}
     
@@ -107,14 +104,14 @@ export default async function BlogPostPage({
     
           <div className={styles.navButtons}>
             {prevPost && (
-              <Link href={`/${params.locale}/blog/${prevPost.fields.slug}`}>
-                 <FaLongArrowAltLeft /> <p>{params.locale === "uk" ? "Попередній" : "Poprzednia"}</p>
+              <Link href={localizePath(`/blog/${prevPost.fields.slug}`, locale)}>
+                 <FaLongArrowAltLeft /> <p>{t("previousPost")}</p>
               </Link>
             )}
-            <ShareButton locale={params.locale as "uk" | "pl"} />
+            <ShareButton />
             {nextPost && (
-              <Link href={`/${params.locale}/blog/${nextPost.fields.slug}`}>
-                <p>{params.locale === "uk" ? "Наступний" : "Następna"}</p> <FaLongArrowAltRight />
+              <Link href={localizePath(`/blog/${nextPost.fields.slug}`, locale)}>
+                <p>{t("nextPost")}</p> <FaLongArrowAltRight />
               </Link>
             )}
           </div>

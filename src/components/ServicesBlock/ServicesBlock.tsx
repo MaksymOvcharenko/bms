@@ -4,11 +4,7 @@ import { client } from "@/lib/contentful";
 import styles from "./ServicesBlock.module.css";
 import { FaChevronDown } from "react-icons/fa";
 import { GiSpanner } from "react-icons/gi";
-
-const localeMap: Record<string, string> = {
-  uk: "uk-UA",
-  pl: "pl-PL",
-};
+import { contentfulLocaleMap, Locale, localizePath } from "@/config/i18n";
 
 const categoryNames: Record<number, Record<string, string>> = {
   1: { uk: "Базові послуги", pl: "Podstawowe usługi" },
@@ -26,7 +22,7 @@ interface ServicesBlockProps {
 export default async function ServicesBlock({ locale }: ServicesBlockProps) {
   const { items } = await client.getEntries({
     content_type: "blsServices",
-    locale: localeMap[locale],
+    locale: contentfulLocaleMap[locale as Locale],
     select: ["fields.title", "fields.slug", "fields.category"],
   });
 
@@ -55,7 +51,7 @@ export default async function ServicesBlock({ locale }: ServicesBlockProps) {
               {services.map((item) => (
                 <li key={item.fields.slug} className={styles.serviceItem}>
                   <GiSpanner size={16} />
-                  <Link href={`/${locale}/services/${item.fields.slug}`}>
+                  <Link href={localizePath(`/services/${item.fields.slug}`, locale as Locale)}>
                     {item.fields.title}
                   </Link>
                 </li>
