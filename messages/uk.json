@@ -24,7 +24,9 @@
         "we_wait": "Чекаємо на тебе!",
         "mon_fri": "Пн.–Пт.",
         "sat": "Сб.",
-        "map_title": "Мапа проїзду до BLS Service"
+        "map_title": "Мапа проїзду до BLS Service",
+        "choose_branch": "Оберіть філіал",
+        "new_branch": "НОВИЙ"
     },
     "FollowSocLink": {
         "title": "Будь в курсі новин нашого сервісу",

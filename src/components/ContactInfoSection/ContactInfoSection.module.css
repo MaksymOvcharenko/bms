@@ -20,6 +20,51 @@
   color: var(--white);
 }
 
+.branchesList {
+  width: 100%;
+}
+
+.branchBlock + .branchBlock {
+  margin-top: 48px;
+  padding-top: 48px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.branchHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto 20px;
+  color: var(--color-primary);
+}
+
+.newBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+  padding: 3px 7px;
+  border-radius: 6px;
+  color: var(--color-black);
+  background: var(--color-primary);
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.branchName {
+  margin: 0;
+  color: var(--color-white);
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
 .grid {
   display: flex;
   flex-direction: column;
@@ -134,5 +179,18 @@
   }
   .heading {
     font-size: 28px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .newBadge {
+    padding-inline: 5px;
+    font-size: 8px;
+  }
+
+  .branchBlock + .branchBlock {
+    margin-top: 36px;
+    padding-top: 36px;
   }
 }

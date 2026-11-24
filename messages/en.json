@@ -24,7 +24,9 @@
     "we_wait": "We look forward to seeing you!",
     "mon_fri": "Mon–Fri",
     "sat": "Sat",
-    "map_title": "Directions to BLS Service"
+    "map_title": "Directions to BLS Service",
+    "choose_branch": "Choose a branch",
+    "new_branch": "NEW"
   },
   "FollowSocLink": {
     "title": "Stay up to date with our service",

@@ -24,7 +24,9 @@
     "we_wait": "Czekamy na Ciebie!",
     "mon_fri": "Pon.–Pt.",
     "sat": "Sob.",
-    "map_title": "Mapa dojazdu do BLS Service"
+    "map_title": "Mapa dojazdu do BLS Service",
+    "choose_branch": "Wybierz oddział",
+    "new_branch": "NOWY"
   },
   "FollowSocLink": {
     "title": "Bądź na bieżąco z naszym serwisem",

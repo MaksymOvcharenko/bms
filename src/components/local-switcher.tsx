@@ -3,14 +3,12 @@
 
 import { useState } from 'react';
 import { useLocale } from 'next-intl';
-import { useRouter } from 'next/navigation';
 import { ChevronDown } from 'lucide-react';
 import styles from "./local-switcher.module.css"
-import { Locale, locales, localizePath } from '@/config/i18n';
+import { Locale, locales } from '@/config/i18n';
 
 export default function LocaleSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
   const localeActive = useLocale();
 
   const languages: Array<{code: Locale; label: string}> = [
@@ -46,15 +44,21 @@ const handleLanguageChange = async (locale: string) => {
     }
   }
 
-  const localizedPath = localizePath(pathWithoutLocale, locale as Locale);
-  router.replace(`${localizedPath}${window.location.search}${window.location.hash}`);
+  // Always visit the explicit locale once. For the default Polish locale,
+  // middleware then redirects /pl/... to the canonical URL without a prefix
+  // and updates NEXT_LOCALE, preventing an old UK/EN cookie from taking over.
+  const localizedPath = `/${locale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`;
+  window.location.assign(`${localizedPath}${window.location.search}${window.location.hash}`);
 };
 
   return (
     <div className={styles.switcher}>
       <button
+        type="button"
         onClick={() => setIsOpen(!isOpen)}
         className={styles.switcherBtn}
+        aria-expanded={isOpen}
+        aria-label="Choose language"
       >
         
         {/* <div className={styles.flag}><Flag code={languages.find((lang) => lang.code === localeActive)?.flag || 'UA'} width={52} height={52} /></div> */}
@@ -68,6 +72,7 @@ const handleLanguageChange = async (locale: string) => {
         <div className={styles.modal}>
           {languages.map(({ code, label }) => (
             <button
+              type="button"
               key={code}
               onClick={() => handleLanguageChange(code)}
               className={styles.modalBtn}
