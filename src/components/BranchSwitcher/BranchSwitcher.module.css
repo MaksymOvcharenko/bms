@@ -1,0 +1,84 @@
+.switcher {
+  position: relative;
+  color: var(--color-white);
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-white);
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.trigger:hover,
+.trigger:focus-visible {
+  color: var(--color-primary);
+}
+
+.trigger svg:first-child {
+  width: 18px;
+  height: 18px;
+  color: var(--color-primary);
+}
+
+.trigger svg:last-child {
+  width: 20px;
+  height: 20px;
+  transition: transform 160ms ease;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 9px);
+  right: 0;
+  z-index: 1100;
+  display: flex;
+  width: 170px;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid #3f3f3f;
+  border-radius: 8px;
+  padding: 5px;
+  background: var(--color-black);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+.menu button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 8px 10px;
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.menu button:hover,
+.menu button:focus-visible,
+.menu .active {
+  color: var(--color-white);
+  background: var(--color-gray-section);
+}
+
+.menu .active {
+  box-shadow: inset 3px 0 0 var(--color-primary);
+}
+
+.menu em {
+  border-radius: 3px;
+  padding: 2px 5px;
+  color: var(--color-black);
+  background: var(--color-primary);
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 700;
+}

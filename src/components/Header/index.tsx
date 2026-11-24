@@ -15,6 +15,7 @@ import MobileMenu from '../MobMenu/MobMenu';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import { trackPhoneClick } from '@/lib/gtmEvents';
 import { contact } from '@/config/contact';
+import BranchSwitcher from '../BranchSwitcher/BranchSwitcher';
 export default function Header() {
   const t = useTranslations('Navigation');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +50,10 @@ export default function Header() {
          <nav className={styles.nav}>
       
           <NavBar />
-          <LocalSwitcher />
+          <div className={styles.switchers}>
+            <LocalSwitcher />
+            <BranchSwitcher />
+          </div>
         </nav>
         <div className={styles.socLink}><SocialLinks />
            <a href={contact.phoneHref} className={styles.socLinkTel} onClick={() => trackPhoneClick(contact.phoneGtm, "header")}>{contact.phoneDisplay}</a></div>

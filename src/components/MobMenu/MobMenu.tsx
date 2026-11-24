@@ -43,6 +43,7 @@ import { IoClose } from 'react-icons/io5';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import LocalSwitcher from '../local-switcher';
 import { Locale, localizePath } from '@/config/i18n';
+import BranchSwitcher from '../BranchSwitcher/BranchSwitcher';
 
 interface Props {
   isOpen: boolean;
@@ -62,7 +63,7 @@ export default function MobileMenu({ isOpen, onClose }: Props) {
     
 
       <nav className={styles.nav}>
-      <div className={styles.switcher}><LocalSwitcher /></div>
+      <div className={styles.switcher}><LocalSwitcher /><BranchSwitcher /></div>
         <Link href={localizePath("/", locale)} onClick={onClose}><span>{t('home')}</span></Link>
         <Link href={`${localizePath("/", locale)}#soclink`} onClick={onClose}><span>{t('about')}</span></Link>
         <Link href={`${localizePath("/", locale)}#service`} onClick={onClose}><span>{t('services')}</span></Link>

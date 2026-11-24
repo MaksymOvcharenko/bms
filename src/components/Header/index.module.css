@@ -23,6 +23,11 @@
 .nav {
   display: none;
 }
+.switchers {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
 .mobMenu {
   color: var(--color-white);
   width: 40px;

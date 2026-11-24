@@ -15,6 +15,7 @@ import ScrollToTopButton from "@/components/ScrollToTopButton/ScrollToTopButton"
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 import { isLocale, Locale, locales, localizePath } from "@/config/i18n";
 import type { Metadata } from "next";
+import BranchWelcome from "@/components/BranchWelcome/BranchWelcome";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -102,6 +103,7 @@ const GTM_ID = "GTM-MTN9TZKH";
           />
         </noscript>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <BranchWelcome />
                  <Suspense fallback={null}>
           <GtmPageView />
         </Suspense>

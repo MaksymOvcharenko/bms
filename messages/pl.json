@@ -28,6 +28,16 @@
     "choose_branch": "Wybierz oddział",
     "new_branch": "NOWY"
   },
+  "BranchWelcome": {
+    "title": "Wybierz najbliższy oddział",
+    "description": "Pokażemy Ci właściwe profile BLS w mediach społecznościowych.",
+    "krakow": "Kraków",
+    "krakow_address": "Skręcona 9, 31-587 Kraków",
+    "warsaw": "Warszawa",
+    "warsaw_address": "Sękocińska 38/B, 05-830 Wolica",
+    "new": "NOWY",
+    "switch_label": "Wybierz oddział"
+  },
   "FollowSocLink": {
     "title": "Bądź na bieżąco z naszym serwisem",
     "descr": "Obserwuj nas w mediach społecznościowych i jako pierwszy poznawaj nowości, porady serwisowe, kulisy naszej pracy oraz zdjęcia z codziennego życia warsztatu BLS.",

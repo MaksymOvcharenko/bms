@@ -28,6 +28,16 @@
     "choose_branch": "Choose a branch",
     "new_branch": "NEW"
   },
+  "BranchWelcome": {
+    "title": "Choose your nearest branch",
+    "description": "We will show you the relevant BLS social media profiles.",
+    "krakow": "Kraków",
+    "krakow_address": "Skręcona 9, 31-587 Kraków",
+    "warsaw": "Warsaw",
+    "warsaw_address": "Sękocińska 38/B, 05-830 Wolica",
+    "new": "NEW",
+    "switch_label": "Choose a branch"
+  },
   "FollowSocLink": {
     "title": "Stay up to date with our service",
     "descr": "Follow us on social media for news, service advice, behind-the-scenes updates and photos from the BLS workshop.",
