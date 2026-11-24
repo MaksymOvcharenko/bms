@@ -8,15 +8,20 @@ import SocialLinks from "../SocialLinks/SocialLinks";
 import { LuMapPin } from "react-icons/lu";
 import { SlClock } from "react-icons/sl";
 import { BranchKey, branches } from "@/config/contact";
+import { useSelectedBranch } from "@/hooks/useSelectedBranch";
 
 export default function ContactInfoSection() {
   const t = useTranslations("Contact");
+  const selectedBranch = useSelectedBranch();
+  const branchOrder: BranchKey[] = selectedBranch === "warsaw"
+    ? ["warsaw", "krakow"]
+    : ["krakow", "warsaw"];
 
   return (
     <section className={styles.wrapper} aria-labelledby="contact-heading">
       <h2 id="contact-heading" className={styles.heading}>{t("title")}</h2>
       <div className={styles.branchesList}>
-        {(Object.keys(branches) as BranchKey[]).map((branchKey) => {
+        {branchOrder.map((branchKey) => {
           const branch = branches[branchKey];
 
           return (

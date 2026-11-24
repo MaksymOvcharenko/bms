@@ -6,10 +6,12 @@ import { useLocale } from 'next-intl';
 import { ChevronDown } from 'lucide-react';
 import styles from "./local-switcher.module.css"
 import { Locale, locales } from '@/config/i18n';
+import { useSelectedBranch, withBranchSuffix } from '@/hooks/useSelectedBranch';
 
 export default function LocaleSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const localeActive = useLocale();
+  const branch = useSelectedBranch();
 
   const languages: Array<{code: Locale; label: string}> = [
     { code: 'pl', label: 'PL' },
@@ -25,6 +27,7 @@ const handleLanguageChange = async (locale: string) => {
   setIsOpen(false);
   const localePattern = new RegExp(`^/(${locales.join('|')})(?=/|$)`);
   let pathWithoutLocale = window.location.pathname.replace(localePattern, '') || '/';
+  pathWithoutLocale = withBranchSuffix(pathWithoutLocale, 'krakow');
   const blogPostMatch = pathWithoutLocale.match(/^\/blog\/([^/]+)$/);
 
   if (blogPostMatch) {
@@ -43,6 +46,8 @@ const handleLanguageChange = async (locale: string) => {
       // Keep the current slug if Contentful is temporarily unavailable.
     }
   }
+
+  pathWithoutLocale = withBranchSuffix(pathWithoutLocale, branch);
 
   // Always visit the explicit locale once. For the default Polish locale,
   // middleware then redirects /pl/... to the canonical URL without a prefix

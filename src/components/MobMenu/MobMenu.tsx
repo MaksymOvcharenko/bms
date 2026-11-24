@@ -44,6 +44,7 @@ import SocialLinks from '../SocialLinks/SocialLinks';
 import LocalSwitcher from '../local-switcher';
 import { Locale, localizePath } from '@/config/i18n';
 import BranchSwitcher from '../BranchSwitcher/BranchSwitcher';
+import { useSelectedBranch, withBranchSuffix } from '@/hooks/useSelectedBranch';
 
 interface Props {
   isOpen: boolean;
@@ -53,6 +54,9 @@ interface Props {
 export default function MobileMenu({ isOpen, onClose }: Props) {
   const t = useTranslations('Navigation');
   const locale = useLocale() as Locale;
+  const branch = useSelectedBranch();
+  const homePath = withBranchSuffix(localizePath('/', locale), branch);
+  const blogPath = withBranchSuffix(localizePath('/blog', locale), branch);
 
   return (
     <div className={`${styles.menu} ${isOpen ? styles.open : styles.closed}`}>
@@ -64,13 +68,13 @@ export default function MobileMenu({ isOpen, onClose }: Props) {
 
       <nav className={styles.nav}>
       <div className={styles.switcher}><LocalSwitcher /><BranchSwitcher /></div>
-        <Link href={localizePath("/", locale)} onClick={onClose}><span>{t('home')}</span></Link>
-        <Link href={`${localizePath("/", locale)}#soclink`} onClick={onClose}><span>{t('about')}</span></Link>
-        <Link href={`${localizePath("/", locale)}#service`} onClick={onClose}><span>{t('services')}</span></Link>
-        <Link href={`${localizePath("/", locale)}#gallery`} onClick={onClose}><span>{t('gallery')}</span></Link>
-        <Link href={`${localizePath("/", locale)}#reviews`} onClick={onClose}><span>{t('reviews')}</span></Link>
-        <Link href={`${localizePath("/", locale)}#contact`} onClick={onClose}><span>{t('contact')}</span></Link>
-        <Link href={localizePath("/blog", locale)} onClick={onClose}><span>{t('blog')}</span></Link>
+        <Link href={homePath} onClick={onClose}><span>{t('home')}</span></Link>
+        <Link href={`${homePath}#soclink`} onClick={onClose}><span>{t('about')}</span></Link>
+        <Link href={`${homePath}#service`} onClick={onClose}><span>{t('services')}</span></Link>
+        <Link href={`${homePath}#gallery`} onClick={onClose}><span>{t('gallery')}</span></Link>
+        <Link href={`${homePath}#reviews`} onClick={onClose}><span>{t('reviews')}</span></Link>
+        <Link href={`${homePath}#contact`} onClick={onClose}><span>{t('contact')}</span></Link>
+        <Link href={blogPath} onClick={onClose}><span>{t('blog')}</span></Link>
       </nav>
  
       <div className={styles.socLink}><SocialLinks /></div>
